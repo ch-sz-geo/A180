@@ -69,40 +69,6 @@ m| asof_dt | Datum, an dem am Datensatz die letzten Änderungen vorgenommen wurd
 
 Das WebGIS bezieht die Daten direkt aus der Datenbank. Aus diesem Grund wird nachfolgend von "Tabelle" und "Spalte" anstelle von "Klasse" und "Attribut" gesprochen. Der Klassenname erscheint lediglich in der Überschrift.
 
-==== Tabelle der `+Waldgrenze+`
-[cols=2*,options="header"]
-|===
-| Quellattribut | Zielspalte
-| - - - | (Standardspalten gemäss den Angaben oben)
-| `+Typ.Code+` +
-hergeleitet über `+Waldgrenze.rTyp+` m| typ
-| `+Typ.Name+` +
-hergeleitet über `+Waldgrenze.rTyp+` m| bezeichnung
-m| Waldgrenze.Geometrie m| geom
-|===
-
-==== Tabelle der `+Stockgrenze+`
-[cols=2*,options="header"]
-|===
-| Quellattribut | Zielspalte
-| - - - | (Standardspalten gemäss den Angaben oben)
-| `+Verfahren.Verfuegungsnummer+` +
-hergeleitet über: +
-`+Stockgrenze.rWaldgrenze+` &#x2192; +
-`+Waldgrenze.Begruendungsverfahren+`
-m| verfuegung_datum_nr
-m| Stockgrenze.Geometrie m| geom
-|===
-
-[cols="e,m,^,>s",width="25%"]
-|===
-|1 >s|2 |3 |4
-^|5 2.2+^.^|6 .3+<.>m|7
-^|8
-|9 2+>|10
-|===
-
-
 ifdef::backend-pdf[]
 <<<
 endif::[]
