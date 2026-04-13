@@ -123,8 +123,8 @@ m| rBewertung
 4+| *Geometrie*
 4+| - - -
 4+| *Bedingungen*
-m|Kennung
-3+a| * `+LinearpositionVon+` < `+LinearpositionBis+`
+|Regel:
+3+| `+LinearpositionVon+` < `+LinearpositionBis+`
 |===
 
 ==== Klasse `+Abschnittsnutzen+`
@@ -173,8 +173,8 @@ m| rNutzen
 4+| *Geometrie*
 4+| - - -
 4+| *Bedingungen*
-m|Kennung
-3+a| * `+LinearpositionVon+` < `+LinearpositionBis+`
+|Regel:
+3+| `+LinearpositionVon+` < `+LinearpositionBis+`
 |===
 
 ==== Klasse `+Abschnittsprioritaet+`
@@ -227,8 +227,8 @@ m| rMassnahme
 4+| *Geometrie*
 4+| - - -
 4+| *Bedingungen*
-m|Kennung
-3+a| * `+LinearpositionVon+` < `+LinearpositionBis+`
+|Regel:
+3+| `+LinearpositionVon+` < `+LinearpositionBis+`
 |===
 
 ifdef::backend-pdf[]
