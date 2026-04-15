@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.26">
-<title>&lt;Themenname&gt; (&lt;Themen-Nummer&gt;)</title>
-<link rel="stylesheet" href="https://ch-sz-geo.github.io/A000_defaultDesigne/themes/stylesheet.css">
+<title>Planung der Revitalisierung von Fliessgewässern (A180)</title>
+<link rel="stylesheet" href="https://ch-sz-geo.github.io/A000_defaultDesign/themes/stylesheet.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/github.min.css">
 </head>
 <body class="book toc2 toc-left">
@@ -14,7 +14,7 @@
 <div id="toc" class="toc2">
 <div id="toctitle">Inhalt</div>
 <ul class="sectlevel0">
-<li><a href="#_themenname_themen_nummer">&lt;Themenname&gt; (&lt;Themen-Nummer&gt;)</a>
+<li><a href="#_planung_der_revitalisierung_von_fliessgewässern_a180">Planung der Revitalisierung von Fliessgewässern (A180)</a>
 <ul class="sectlevel1">
 <li><a href="#_allgemeines">1. Allgemeines</a>
 <ul class="sectlevel2">
@@ -35,34 +35,44 @@
 <li><a href="#_topic_stammdaten">4.1. Topic <code>Stammdaten</code></a>
 <ul class="sectlevel3">
 <li><a href="#_klasse_katalogeintrag">4.1.1. Klasse <code>Katalogeintrag</code></a></li>
-<li><a href="#_klasse_standard_katalogeintrag">4.1.2. Klasse <code>Standard-Katalogeintrag</code></a></li>
-<li><a href="#_klasse_separate_stammdaten">4.1.3. Klasse <code>separate Stammdaten</code></a></li>
+<li><a href="#_klasse_bewertung">4.1.2. Klasse <code>Bewertung</code></a></li>
+<li><a href="#_klasse_nutzen">4.1.3. Klasse <code>Nutzen</code></a></li>
+<li><a href="#_klasse_massnahme">4.1.4. Klasse <code>Massnahme</code></a></li>
+<li><a href="#_klasse_bauaufwand">4.1.5. Klasse <code>Bauaufwand</code></a></li>
+<li><a href="#_klasse_potenzial">4.1.6. Klasse <code>Potenzial</code></a></li>
+<li><a href="#_klasse_praeferenz">4.1.7. Klasse <code>Praeferenz</code></a></li>
 </ul>
 </li>
 <li><a href="#_topic_fachdaten">4.2. Topic <code>Fachdaten</code></a>
 <ul class="sectlevel3">
-<li><a href="#_klasse_klasse1">4.2.1. Klasse <code>Klasse1</code></a></li>
+<li><a href="#_klasse_abschnittsbewertung">4.2.1. Klasse <code>Abschnittsbewertung</code></a></li>
+<li><a href="#_klasse_abschnittsnutzen">4.2.2. Klasse <code>Abschnittsnutzen</code></a></li>
+<li><a href="#_klasse_abschnittsprioritaet">4.2.3. Klasse <code>Abschnittsprioritaet</code></a></li>
+<li><a href="#_klasse_bauwerksbewertung">4.2.4. Klasse <code>Bauwerksbewertung</code></a></li>
+<li><a href="#_klasse_bauwerk">4.2.5. Klasse <code>Bauwerk</code></a></li>
+<li><a href="#_klasse_absturzbewertung">4.2.6. Klasse <code>Absturzbewertung</code></a></li>
+<li><a href="#_klasse_absturz">4.2.7. Klasse <code>Absturz</code></a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li><a href="#_modelltransformationen">5. Modelltransformationen</a>
 <ul class="sectlevel2">
-<li><a href="#_transformation_vom_bearbeitungsmodell_ins_publikationsmodell">5.1. Transformation vom Bearbeitungsmodell ins Publikationsmodell</a></li>
-<li><a href="#_transformation_ins_minimale_geodatenmodell_des_bundes">5.2. Transformation ins minimale Geodatenmodell des Bundes</a></li>
-<li><a href="#_transformation_ins_transfermodell_öreb_kataster">5.3. Transformation ins Transfermodell ÖREB-Kataster</a>
+<li><a href="#_todo_transformation_vom_bearbeitungsmodell_ins_publikationsmodell">5.1. [todo] Transformation vom Bearbeitungsmodell ins Publikationsmodell</a></li>
+<li><a href="#_transformation_ins_minimale_geodatenmodell_des_bundes">5.2. Transformation ins minimale Geodatenmodell des Bundes</a>
 <ul class="sectlevel3">
-<li><a href="#_klasse_darstellungsdienst">5.3.1. Klasse <code>DarstellungsDienst</code></a></li>
-<li><a href="#_klasse_eigentumsbeschraenkung">5.3.2. Klasse <code>Eigentumsbeschraenkung</code></a></li>
-<li><a href="#_klasse_geometrie">5.3.3. Klasse <code>Geometrie</code></a></li>
-<li><a href="#_klasse_legendeeintrag">5.3.4. Klasse <code>LegendeEintrag</code></a></li>
+<li><a href="#_klasse_abschoekomorph">5.2.1. Klasse <code>AbschOekomorph</code></a></li>
+<li><a href="#_klasse_absturz_2">5.2.2. Klasse <code>Absturz</code></a></li>
+<li><a href="#_klasse_bauwerk_2">5.2.3. Klasse <code>Bauwerk</code></a></li>
+<li><a href="#_klasse_abschoeb">5.2.4. Klasse <code>AbschOEB</code></a></li>
+<li><a href="#_klasse_abschnutzen">5.2.5. Klasse <code>AbschNutzen</code></a></li>
+<li><a href="#_klasse_abschprio">5.2.6. Klasse <code>AbschPrio</code></a></li>
+<li><a href="#_klasse_absturznutzen">5.2.7. Klasse <code>AbsturzNutzen</code></a></li>
 </ul>
 </li>
-<li><a href="#_transformation_ins_webgis">5.4. Transformation ins WebGIS</a>
+<li><a href="#_todo_transformation_ins_webgis">5.3. [todo] Transformation ins WebGIS</a>
 <ul class="sectlevel3">
-<li><a href="#_allgemeines_2">5.4.1. Allgemeines</a></li>
-<li><a href="#_tabelle_der_waldgrenze">5.4.2. Tabelle der <code>Waldgrenze</code></a></li>
-<li><a href="#_tabelle_der_stockgrenze">5.4.3. Tabelle der <code>Stockgrenze</code></a></li>
+<li><a href="#_allgemeines_2">5.3.1. Allgemeines</a></li>
 </ul>
 </li>
 </ul>
@@ -76,32 +86,15 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph img-logo">
-<p><span class="image"><img src="https://ch-sz-geo.github.io/A000_defaultDesigne/themes/logo_kt_sz_rgb.jpg" alt="logo kt sz rgb"></span></p>
+<p><span class="image"><img src="https://ch-sz-geo.github.io/A000_defaultDesign/themes/logo_kt_sz_rgb.jpg" alt="logo kt sz rgb"></span></p>
 </div>
 </div>
 </div>
-<h1 id="_themenname_themen_nummer" class="sect0"><a class="anchor" href="#_themenname_themen_nummer"></a><a class="link" href="#_themenname_themen_nummer">&lt;Themenname&gt; (&lt;Themen-Nummer&gt;)</a></h1>
+<h1 id="_planung_der_revitalisierung_von_fliessgewässern_a180" class="sect0"><a class="anchor" href="#_planung_der_revitalisierung_von_fliessgewässern_a180"></a><a class="link" href="#_planung_der_revitalisierung_von_fliessgewässern_a180">Planung der Revitalisierung von Fliessgewässern (A180)</a></h1>
 <div class="openblock partintro">
 <div class="content">
 <div class="paragraph">
 <p><span class="subtitle">Modelldokumentation</span><br></p>
-</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://ch-sz-geo.github.io/A000_entrypage/">zur Startseite</a><br></p>
-</li>
-<li>
-<p><a href="https://amandawetter.github.io/A000_Rebuild/">Übersicht AXXX Dokumentation</a><br></p>
-</li>
-<li>
-<p><a href="https://amandawetter.github.io/A000_Rebuild/docs/modelldokumentation.pdf">Dokumentation als PDF</a><br></p>
-</li>
-</ul>
-</div>
-</div>
 </div>
 <h3 id="_impressum" class="discrete">Impressum</h3>
 <details>
@@ -115,67 +108,24 @@
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Erstelldatum</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2024-01-01</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2026-04-13</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">letzte Änderung</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2026-02-03</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2026-04-15</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Themen-Nummer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Annn</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A180</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ID nach kGeoiV</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">---</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">191.1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Beteiligte</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Person 1 (Kürzel 1), Amt 1<br>
-Person 2 (Kürzel 2), Amt 2</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Status</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist checklist">
-<ul class="checklist">
-<li>
-<p>&#10063; Entwurf</p>
-</li>
-<li>
-<p>&#10063; bereit für Vernehmlassung</p>
-</li>
-<li>
-<p>&#10003; gültig</p>
-</li>
-</ul>
-</div></div></td>
-</tr>
-</tbody>
-</table>
-</div>
-</details>
-<details>
-<summary class="title">Koreferat</summary>
-<div class="content">
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 30%;">
-<col style="width: 30%;">
-</colgroup>
-<tbody>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Version</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Datum</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Koreferent</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Prüfstelle</p></th>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2001-01-01</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xy</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Amt A</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Heinz Schneider, Fachexperte (HS), Amt für Gewässer<br>
+Kuno Epper, Modellierer (kep), Amt für Geoinformation</p></td>
 </tr>
 </tbody>
 </table>
@@ -227,15 +177,22 @@ Person 2 (Kürzel 2), Amt 2</p></td>
 <div class="ulist">
 <ul>
 <li>
-<p><strong><em>&lt;Name des Datensatzes&gt;</em>.</strong></p>
+<p><strong>Planung der Revitalisierung von Fliessgewässern</strong></p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p><em>&lt;weitere Beschreibungen&gt;</em></p>
+<p>Das Thema <strong>Planung der Revitalisierung von Fliessgewässern</strong> ist Teil des Bundesmodells "Revitalisierung der Fliessgewässer" (ID 191). Neben der Revitalisierungsplanung umfasst der Bundesdatensatz die Ökomorphologie. Ersteres wird über einen Zeitraum von zwölf Jahren bestimmt und unterscheidet sich von der laufenden Nachführung der Ökomorphologiedaten. Aus diesem Grund wünschte die zuständige kantonale Stelle eine Trennung von den nachzuführenen Daten der Ökomorphologie und den langfristigen Daten der Revitalisierungsplanung. Dies führte zur Aufteilung in folgende kantonalen Themen:</p>
 </div>
-<div class="paragraph">
-<p>Der Geobasisdatensatz ist Bestandteil des ÖREB-Katasters.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Ökomorphologie der Fliessgewässer</strong> (A026) mit laufender Nachführung und</p>
+</li>
+<li>
+<p><strong>Planung der Revitalisierung von Fliessgewässern</strong> (A180) mit statischen Daten der Zwölfjahresplanung.</p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect2">
@@ -321,9 +278,6 @@ Person 2 (Kürzel 2), Amt 2</p></td>
 <div class="paragraph">
 <p>Die Klasse <code>Katalogeintrag</code> enthält die allgemeinen, für alle Kataloge gemeinsamen Attribute. Die Klasse selber ist abstrakt: Es gibt keine Objekte <code>Katalogeintrag</code>, sondern nur Objekte von den spezialisierten Klassen.</p>
 </div>
-<div class="paragraph">
-<p>Spaltenbreite Variante 1:</p>
-</div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 10%;">
@@ -372,62 +326,11 @@ Person 2 (Kürzel 2), Amt 2</p></td>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>Spaltenbreite Variante 2:</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Name</th>
-<th class="tableblock halign-left valign-top">Beschreibung</th>
-<th class="tableblock halign-left valign-top">Beispiel</th>
-<th class="tableblock halign-left valign-top">Freigabe</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OID</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">technischer Objektidentifikator</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ceaa37a9-8614-43fc-9a8b-688f95c30218</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Code</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Code des Listeneintrages; entspricht in INTERLIS dem Wert der Aufzählung und muss ein gültiger INTERLIS-Name sein (siehe <a href="https://www.interlis.ch/dokumentation">INTERLIS-Referenzhandbuch</a>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">in_Aenderung</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Name</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bezeichnung des Katalogeintrages, wie er den Nutzenden angezeigt wird</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">in Änderung</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SortierNr</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Reihenfolge des Katalogeintrages in der Auswahlliste</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Erläuterung, welche den Katalogeintrag näher beschreibt</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dieser Status wird für alle Objekte verwendet, bei denen aktuell eine Nachführung läuft.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="sect3">
-<h4 id="_klasse_standard_katalogeintrag"><a class="anchor" href="#_klasse_standard_katalogeintrag"></a><a class="link" href="#_klasse_standard_katalogeintrag">4.1.2. Klasse <code>Standard-Katalogeintrag</code></a></h4>
+<h4 id="_klasse_bewertung"><a class="anchor" href="#_klasse_bewertung"></a><a class="link" href="#_klasse_bewertung">4.1.2. Klasse <code>Bewertung</code></a></h4>
 <div class="paragraph">
-<p>Die Verbindlichkeit kam mit der Aufnahme der statischen Waldgrenzen in den ÖREB-Kataster. Sie ist eine Spezialisierung der Klasse <code>Katalogeintrag</code>.</p>
+<p>Die Klasse <code>Bewertung</code> führt die Werte des Katalogs "Bewertung". Sie ist eine Spezialisierung der Klasse <code>Katalogeintrag</code>.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -463,12 +366,9 @@ Person 2 (Kürzel 2), Amt 2</p></td>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_klasse_separate_stammdaten"><a class="anchor" href="#_klasse_separate_stammdaten"></a><a class="link" href="#_klasse_separate_stammdaten">4.1.3. Klasse <code>separate Stammdaten</code></a></h4>
+<h4 id="_klasse_nutzen"><a class="anchor" href="#_klasse_nutzen"></a><a class="link" href="#_klasse_nutzen">4.1.3. Klasse <code>Nutzen</code></a></h4>
 <div class="paragraph">
-<p>Über den Typ wird die Art der Geometrie festgelegt.</p>
-</div>
-<div class="paragraph">
-<p>In der Klasse <code>Typ</code> wurde anfänglich auch der Typ des Wirkbereiches aufgeführt. Weil ein Wirkbereich jedoch stets gleich symbolisiert wird, wurde entschieden, auf diesen Eintrag zu verzichtet.</p>
+<p>Die Klasse <code>Nutzen</code> führt die Werte des Katalogs "Nutzen". Sie ist eine Spezialisierung der Klasse <code>Katalogeintrag</code>.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -487,46 +387,173 @@ Person 2 (Kürzel 2), Amt 2</p></td>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OID</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">technischer Objektidentifikator</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ceaa37a9-8614-43fc-9a8b-688f95c30218</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><em>Diese Klasse führt keine zusätzlichen Attribute</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Anforderungen</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Code</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Code des Listeneintrages; entspricht in INTERLIS dem Wert der Aufzählung und muss ein gültiger INTERLIS-Name sein (siehe <a href="https://www.interlis.ch/dokumentation">INTERLIS-Referenzhandbuch</a>)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ausserhalb_Bauzonen_statisch</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Die Werte müssen eindeutig sein</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Name</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bezeichnung des Katalogeintrages, wie er den Nutzenden angezeigt wird</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Waldgrenze ausserhalb Bauzone (statisch)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Die Werte müssen eindeutig sein</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_klasse_massnahme"><a class="anchor" href="#_klasse_massnahme"></a><a class="link" href="#_klasse_massnahme">4.1.4. Klasse <code>Massnahme</code></a></h4>
+<div class="paragraph">
+<p>Die Klasse <code>Massnahme</code> führt die Werte des Katalogs "Massnahme". Sie ist eine Spezialisierung der Klasse <code>Katalogeintrag</code>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+<th class="tableblock halign-left valign-top">Beispiel</th>
+<th class="tableblock halign-left valign-top">Freigabe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><em>Diese Klasse führt keine zusätzlichen Attribute</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Abkuerzung</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kurzform des Katalogeintrages</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">WGraB_s</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Anforderungen</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SortierNr</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Reihenfolge des Katalogeintrages in der Auswahlliste</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Code</code></p></td>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Die Werte müssen eindeutig sein</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Erläuterung, welche den Katalogeintrag näher beschreibt</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Statische Waldgrenze in Gebieten ausserhalb der Bauzonen, in denen der Kanton eine Zunahme des Waldes verhindern will.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Name</code></p></td>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Die Werte müssen eindeutig sein</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Ab hier folgend die neuen Stammdaten aufgrund der Änderungswünsche des Auftragnehmers:</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_klasse_bauaufwand"><a class="anchor" href="#_klasse_bauaufwand"></a><a class="link" href="#_klasse_bauaufwand">4.1.5. Klasse <code>Bauaufwand</code></a></h4>
+<div class="paragraph">
+<p>Die Klasse <code>Bauaufwand</code> führt die Werte des Katalogs "Bauaufwand". Sie ist eine Spezialisierung der Klasse <code>Katalogeintrag</code>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+<th class="tableblock halign-left valign-top">Beispiel</th>
+<th class="tableblock halign-left valign-top">Freigabe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><em>Diese Klasse führt keine zusätzlichen Attribute</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Symbol</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bild des Legendeneintrages; codiert als Base64-Wert</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">iVBORw0KGg&#8230;&#8203; (gekürzt)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Anforderungen</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Code</code></p></td>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Die Werte müssen eindeutig sein</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Name</code></p></td>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Die Werte müssen eindeutig sein</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_klasse_potenzial"><a class="anchor" href="#_klasse_potenzial"></a><a class="link" href="#_klasse_potenzial">4.1.6. Klasse <code>Potenzial</code></a></h4>
+<div class="paragraph">
+<p>Die Klasse <code>Potenzial</code> führt die Werte des Katalogs "Potenzial". Sie ist eine Spezialisierung der Klasse <code>Katalogeintrag</code>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+<th class="tableblock halign-left valign-top">Beispiel</th>
+<th class="tableblock halign-left valign-top">Freigabe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><em>Diese Klasse führt keine zusätzlichen Attribute</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Anforderungen</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Code</code></p></td>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Die Werte müssen eindeutig sein</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Name</code></p></td>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Die Werte müssen eindeutig sein</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_klasse_praeferenz"><a class="anchor" href="#_klasse_praeferenz"></a><a class="link" href="#_klasse_praeferenz">4.1.7. Klasse <code>Praeferenz</code></a></h4>
+<div class="paragraph">
+<p>Die Klasse <code>Praeferenz</code> führt die Werte des Katalogs "Praeferenz". Sie ist eine Spezialisierung der Klasse <code>Katalogeintrag</code>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+<th class="tableblock halign-left valign-top">Beispiel</th>
+<th class="tableblock halign-left valign-top">Freigabe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><em>Diese Klasse führt keine zusätzlichen Attribute</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Anforderungen</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Code</code></p></td>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Die Werte müssen eindeutig sein</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Name</code></p></td>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Die Werte müssen eindeutig sein</p></td>
 </tr>
 </tbody>
 </table>
@@ -538,9 +565,9 @@ Person 2 (Kürzel 2), Amt 2</p></td>
 <p>Das Topic <code>Fachdaten</code> umfasst die eigentlichen, fachlichen Klassen des Themas.</p>
 </div>
 <div class="sect3">
-<h4 id="_klasse_klasse1"><a class="anchor" href="#_klasse_klasse1"></a><a class="link" href="#_klasse_klasse1">4.2.1. Klasse <code>Klasse1</code></a></h4>
+<h4 id="_klasse_abschnittsbewertung"><a class="anchor" href="#_klasse_abschnittsbewertung"></a><a class="link" href="#_klasse_abschnittsbewertung">4.2.1. Klasse <code>Abschnittsbewertung</code></a></h4>
 <div class="paragraph">
-<p>Die Klasse <code>Klasse1</code> führt &#8230;&#8203;..</p>
+<p>Die Klasse <code>Abschnittsbewertung</code> führt die Bewertung des Abschnittes hinsichtlich des ökomorphologischen Potenzials. Im Bundesmodell entspricht dies der Klasse <code>AbschOEB</code>.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -558,12 +585,6 @@ Person 2 (Kürzel 2), Amt 2</p></td>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OID</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">technischer Objektidentifikator</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ceaa37a9-8614-43fc-9a8b-688f95c30218</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>erfasstVon</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt</p></td>
@@ -589,15 +610,21 @@ Person 2 (Kürzel 2), Amt 2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>gueltigVon</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datum, an dem das Objekt rechtskräftig wurde bzw. wird. Es gilt der Zeitpunkt mittags um 12:00 Uhr. Das Datum kann sowohl in der Vergangenheit wie auch in der Zukunft liegen.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2024-01-01</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Achsgeometrie</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifikator der Flussachsenroute (siehe Thema A243); dient der linearen Referenzierung.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">363-0010</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>gueltigBis</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datum, an dem das Objekt rechtskräftig aufgehoben wurde bzw. wird. Es gilt der Zeitpunkt mittags um 12:00 Uhr. Das Datum kann sowohl in der Vergangenheit wie auch in der Zukunft liegen.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2030-12-31</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LinearpositionVon</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measure-Wert entlang der Flussachsenroute, welcher den Anfang des Abschnittes markiert.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4796.8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LinearpositionBis</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measure-Wert entlang der Flussachsenroute, welcher das Ende des Abschnittes markiert.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6216.5</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
@@ -607,24 +634,34 @@ Person 2 (Kürzel 2), Amt 2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung_intern</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Erläuterung, welche den Katalogeintrag näher beschreibt</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dieser Status wird für alle Objekte verwendet, bei denen aktuell eine Nachführung läuft.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">amtsintern</span></p></td>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Beziehungsattribute</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rBewertung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zum Katalog "Bewertung"</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ccee2bad-419e-454e-9e0f-9ef2ae2d4d44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Geometrie</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Geometrie</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Geometrie des Objektes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(ohne Beispiel)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock">- - -</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Bedingungen</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Regel:</p></td>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock"><code>LinearpositionVon</code> &lt; <code>LinearpositionBis</code></p></td>
 </tr>
 </tbody>
 </table>
+</div>
+<div class="sect3">
+<h4 id="_klasse_abschnittsnutzen"><a class="anchor" href="#_klasse_abschnittsnutzen"></a><a class="link" href="#_klasse_abschnittsnutzen">4.2.2. Klasse <code>Abschnittsnutzen</code></a></h4>
 <div class="paragraph">
-<p>Variante mit Fremdschlüssel-, Geometrie- und Bedingungsattributen:</p>
+<p>Die Klasse <code>Abschnittsnutzen</code> führt die Bewertung des Abschnittes hinsichtlich des ökomorphologischen Potenzials. Im Bundesmodell entspricht dies der Klasse <code>AbschNutzen</code>.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -643,173 +680,665 @@ Person 2 (Kürzel 2), Amt 2</p></td>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Fachattribute</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OID</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">technischer Objektidentifikator</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ceaa37a9-8614-43fc-9a8b-688f95c30218</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>erfasstVon</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Musterha</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">intern</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>erfasstAm</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1980-03-21T15:38:12</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">intern</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>geaendertVon</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Muelleran</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">intern</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>geaendertAm</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2024-07-30T08:07:57</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">intern</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Kennung</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">fortlaufende, einfach aufgebaute Kennung, welche sich zur Identifikation eignet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GA1159</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>KennungAlt</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Nummer aus dem alten geologischen Archiv; entspricht "IDAlternate" aus DM_GeolAssets_V2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GA01.2.1461</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Achsgeometrie</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifikator der Flussachsenroute (siehe Thema A243); dient der linearen Referenzierung.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">363-0010</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Titel</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Titel des Dokuments; entspricht "IDAlternate" aus DM_GeolAssets_V2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UVP:GeolGeotecGutachtenzumVorprojekt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LinearpositionVon</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measure-Wert entlang der Flussachsenroute, welcher den Anfang des Abschnittes markiert.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4796.8</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Erstelldatum</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datum des Berichtes; entspricht "DateCreation" aus DM_GeolAssets_V2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1985-03-21</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Dokumentlink</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Link, über den auf das Dokument zugegrifen werden kann; Pfad zum Speicher- bzw. Ablageort des Dokuments</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Q:...\2021-01-18-0303_NB_Standseilbahn_Stoos_Bauproj_KL.pdf</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Baugesuchsnummer</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kennung des Baugesuches, welches mit dem Dokument in Verbindung steht</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">B2019-0421</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Autor</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kennung der Objekt-ID des Unternehmens, welches den Bericht verfasst hat. Auf eine ausmodellierte Beziehung wird der Einfachheit halber verzichtet, so dass hier nur die ID eingetragen werden muss.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2a150ef7-eb3d-4661-99d6-52d6eb7a5fd0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LinearpositionBis</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measure-Wert entlang der Flussachsenroute, welcher das Ende des Abschnittes markiert.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6216.5</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kommentar zum entsprechenden Dokument; entspricht "Description" aus DM_GeolAssets_V2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Das ist meine Bemerkung zu diesem Dokument.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentliche Bemerkung zum Objekt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Das ist eine öffentliche Bemerkung</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Beziehungsattribute</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rGeometrie</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zur Geometrie, welche mit dem Dokument verknüpft ist.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rNutzen</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zum Katalog "Nutzen"</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ccee2bad-419e-454e-9e0f-9ef2ae2d4d44</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rInhalt</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zum Inhalt (Stammdaten); entspricht "Kind" aus DM_GeolAssets_V2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">e0807260-956b-40a2-871a-e32c51ebf192 (für "Bohrprofil")</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Geometrie</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Geometrie</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Geometrie des Objektes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(ohne Beispiel)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock">- - -</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Bedingungen</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Kennung</code></p></td>
-<td class="tableblock halign-left valign-top" colspan="3"><div class="content"><div class="ulist">
-<ul>
-<li>
-<p>Die Werte müssen innerhalb der Klasse eindeutig sein.</p>
-</li>
-<li>
-<p>Nach der Vergabe muss der Wert unverändert bleiben.</p>
-</li>
-</ul>
-</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Regel:</p></td>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock"><code>LinearpositionVon</code> &lt; <code>LinearpositionBis</code></p></td>
 </tr>
 </tbody>
 </table>
+</div>
+<div class="sect3">
+<h4 id="_klasse_abschnittsprioritaet"><a class="anchor" href="#_klasse_abschnittsprioritaet"></a><a class="link" href="#_klasse_abschnittsprioritaet">4.2.3. Klasse <code>Abschnittsprioritaet</code></a></h4>
+<div class="paragraph">
+<p>Die Klasse <code>Abschnittsprioritaet</code> führt die Bewertung des Abschnittes hinsichtlich des ökomorphologischen Potenzials. Im Bundesmodell entspricht dies der Klasse <code>AbschPrio</code>.</p>
+</div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 10%;">
-<col style="width: 10%;">
-<col style="width: 10%;">
-<col style="width: 60%;">
-<col style="width: 10%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Attribute</th>
-<th class="tableblock halign-left valign-top">Anzahl</th>
-<th class="tableblock halign-left valign-top">Typ</th>
+<th class="tableblock halign-left valign-top">Name</th>
 <th class="tableblock halign-left valign-top">Beschreibung</th>
+<th class="tableblock halign-left valign-top">Beispiel</th>
 <th class="tableblock halign-left valign-top">Freigabe</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Code des Katalogeintrages; entspricht dem Wert der Aufzählung in einem INTERLIS-Modell. Der Code beinhaltet den "Wert für die Maschine" und dient z.B. zur Steuerung einer Applikation (z.B. Farbvergabe); Änderungen am Code sind mit allen Parteien, die am Datenaustausch beteiligt sind, abzusprechen.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>erfasstVon</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Musterha</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>erfasstAm</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1980-03-21T15:38:12</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Name</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Zahl</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">für den Benutzer lesbarer Name des Katalogeintrages Der Name beinhaltet den Wert "für den Menschen".</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>geaendertVon</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Muelleran</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>geaendertAm</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024-07-30T08:07:57</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">SortierNr</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Zahl</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Die Sortiernummer bestimmt die Position eines Wertes in der Liste: je tiefer die Zahl, desto weiter oben steht der Wert in der Liste.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Achsgeometrie</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifikator der Flussachsenroute (siehe Thema A243); dient der linearen Referenzierung.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">363-0010</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bemerkung</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Erläuterungen zum Objekt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LinearpositionVon</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measure-Wert entlang der Flussachsenroute, welcher den Anfang des Abschnittes markiert.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4796.8</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LinearpositionBis</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measure-Wert entlang der Flussachsenroute, welcher das Ende des Abschnittes markiert.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6216.5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Frist</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Codierter Wert für das Zeitfenster, in welchem die Umsetzung geplant ist.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3 (für das Zeitfenster 2029-2032)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentliche Bemerkung zum Objekt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Das ist eine öffentliche Bemerkung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Beziehungsattribute</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rMassnahme</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zum Katalog "Massnahme"</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ccee2bad-419e-454e-9e0f-9ef2ae2d4d44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Geometrie</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock">- - -</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Bedingungen</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Regel:</p></td>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock"><code>LinearpositionVon</code> &lt; <code>LinearpositionBis</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Ab hier folgend die neuen Stammdaten aufgrund der Änderungswünsche des Auftragnehmers:</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_klasse_bauwerksbewertung"><a class="anchor" href="#_klasse_bauwerksbewertung"></a><a class="link" href="#_klasse_bauwerksbewertung">4.2.4. Klasse <code>Bauwerksbewertung</code></a></h4>
+<div class="paragraph">
+<p>Die Klasse <code>Bauwerksbewertung</code> führt die Bewertung des Bauwerks. Die Klasse hat keine Entsprechung im Bundesmodell. Sie ist eine kantonale Erweiterung.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+<th class="tableblock halign-left valign-top">Beispiel</th>
+<th class="tableblock halign-left valign-top">Freigabe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>erfasstVon</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Musterha</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>erfasstAm</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1980-03-21T15:38:12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>geaendertVon</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Muelleran</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>geaendertAm</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024-07-30T08:07:57</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Identifikator_Bauwerk</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifikator (OID) des Bauwerks im Modell "SZ_Oekomorphologie_Fliessgewaesser_V1_1".<br>
+Im Sinne unabhängiger Datenmodelle wird die lose Koppelung der Daten bevorzugt und auf die Modellierung eines Fremdschlüsselattributes verzichtet.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ccee2bad-419e-454e-9e0f-9ef2ae2d4d44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Identifikator_Quellsystem</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifikator gemäss dem Quellsystem, in welchem das Objekt erzeugt wurde.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12345</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Sohlengefaelle</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[todo: prüfen] Gefälle der Sohle an der Stelle des Bauwerks in Promille. Berechnet aus DTM und des Gewässernetzes.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8.5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Habitatsvergroesserungsindex</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[todo: prüfen] Gerechneter, indexierter Wert zur Habitatsvergrösserung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">750</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>hatFeldbegehung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Angabe, ob die Beurteilung aufgrund einer Feldbegehung erfolgte oder nicht</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ja</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>istNutzenoptimiert</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Angabe, ob mit geringem Aufwand ein grosser Nutzen erzielt werden kann (low hanging fruit).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ja</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung_Feldaufnahme</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bemerkungen zur Feldaufnnahme</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Die Feldaufnahme erfolgte bei strahlendem Sonnenschein.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung_Feldrelevanz</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bemerkungen zur Feldrelevanz</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Das ist eine Bemerkung zur Feldrelevanz.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung_Nutzen</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bemerkungen zur Einstufung des Nutzens</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Das ist eine Bemerkung zum Nutzen der Einstufung.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Begruendung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Begründung für die Umstufung des Nutzens im Rahmen der Plausibilisierung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Das ist eine Begründung.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung_Plausibilisierung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bemerkungen zur Plausibilisierung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Das ist eine Bemerkung zur Plausibilisierung.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Massnahme</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Festlegung möglicher Massnahmen zur Optimierung der Längsvernetzung.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Das ist die Beschreibung einer Massnahme.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>[todo: Wertebereich prüfen] Prioritaet</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Priorisierung ausgewählter Hindernisse für die anstehende Umsetzungsetappe.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Das ist meine Priorisierung.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Beziehungsattribute</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rBauaufwand</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zum Katalog "Bauaufwand"</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ccee2bad-419e-454e-9e0f-9ef2ae2d4d44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rPotenzial</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zum Katalog "Potenzial"</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ccee2bad-419e-454e-9e0f-9ef2ae2d4d44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rPraeferenz</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zum Katalog "Praeferenz"</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ccee2bad-419e-454e-9e0f-9ef2ae2d4d44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rGISNutzen</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zum Katalog "Nutzen"; aufgrund der identischen Werte nutzt der "GIS-Nutzen" die Einträge des Katalogs "Nutzen".</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ccee2bad-419e-454e-9e0f-9ef2ae2d4d44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Geometrie</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock">- - -</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Bedingungen</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Identifikator_Bauwerk</code></p></td>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Der Wert muss mit einer OID der Klasse <code>SZ_Oekomorphologie_Fliessgewaesser_V1_1.Oekomorphologie.Bauwerk</code> übereinstimmen.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_klasse_bauwerk"><a class="anchor" href="#_klasse_bauwerk"></a><a class="link" href="#_klasse_bauwerk">4.2.5. Klasse <code>Bauwerk</code></a></h4>
+<div class="paragraph">
+<p>Die Klasse <code>Bauwerk</code> führt die Identifikatoren (OID) jener Bauwerke, welche zu einer Hindernisgruppe zusammengefasst werden. Die Klasse hat keine Entsprechung im Bundesmodell. Sie ist eine kantonale Erweiterung.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+<th class="tableblock halign-left valign-top">Beispiel</th>
+<th class="tableblock halign-left valign-top">Freigabe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>erfasstVon</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Musterha</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>erfasstAm</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1980-03-21T15:38:12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>geaendertVon</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Muelleran</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>geaendertAm</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024-07-30T08:07:57</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Identifikator_Bauwerk</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifikator (OID) des Bauwerks im Modell "SZ_Oekomorphologie_Fliessgewaesser_V1_1".<br>
+Im Sinne unabhängiger Datenmodelle wird die lose Koppelung der Daten bevorzugt und auf die Modellierung eines Fremdschlüsselattributes verzichtet.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ccee2bad-419e-454e-9e0f-9ef2ae2d4d44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Beziehungsattribute</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rGruppe</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zur Klasse "Bauwerksbewertung"</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ccee2bad-419e-454e-9e0f-9ef2ae2d4d44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Geometrie</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock">- - -</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Bedingungen</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Identifikator_Bauwerk</code></p></td>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Der Wert muss mit einer OID der Klasse <code>SZ_Oekomorphologie_Fliessgewaesser_V1_1.Oekomorphologie.Bauwerk</code> übereinstimmen.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_klasse_absturzbewertung"><a class="anchor" href="#_klasse_absturzbewertung"></a><a class="link" href="#_klasse_absturzbewertung">4.2.6. Klasse <code>Absturzbewertung</code></a></h4>
+<div class="paragraph">
+<p>Die Klasse <code>Absturzbewertung</code> führt die Bewertung der Abstürze. Die Klasse hat keine Entsprechung im Bundesmodell. Sie ist eine kantonale Erweiterung.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+<th class="tableblock halign-left valign-top">Beispiel</th>
+<th class="tableblock halign-left valign-top">Freigabe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>erfasstVon</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Musterha</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>erfasstAm</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1980-03-21T15:38:12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>geaendertVon</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Muelleran</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>geaendertAm</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024-07-30T08:07:57</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Identifikator_Absturz</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifikator (OID) des Absturzes im Modell "SZ_Oekomorphologie_Fliessgewaesser_V1_1".<br>
+Im Sinne unabhängiger Datenmodelle wird die lose Koppelung der Daten bevorzugt und auf die Modellierung eines Fremdschlüsselattributes verzichtet.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ccee2bad-419e-454e-9e0f-9ef2ae2d4d44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Identifikator_Quellsystem</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifikator gemäss dem Quellsystem, in welchem das Objekt erzeugt wurde.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12345</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Sohlengefaelle</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[todo: prüfen] Gefälle der Sohle an der Stelle des Bauwerks in Promille. Berechnet aus DTM und des Gewässernetzes.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8.5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Habitatsvergroesserungsindex</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[todo: prüfen] Gerechneter, indexierter Wert zur Habitatsvergrösserung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">750</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>hatFeldbegehung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Angabe, ob die Beurteilung aufgrund einer Feldbegehung erfolgte oder nicht</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ja</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>istNutzenoptimiert</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Angabe, ob mit geringem Aufwand ein grosser Nutzen erzielt werden kann (low hanging fruit).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ja</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung_Feldaufnahme</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bemerkungen zur Feldaufnnahme</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Die Feldaufnahme erfolgte bei strahlendem Sonnenschein.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung_Feldrelevanz</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bemerkungen zur Feldrelevanz</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Das ist eine Bemerkung zur Feldrelevanz.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung_Nutzen</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bemerkungen zur Einstufung des Nutzens</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Das ist eine Bemerkung zum Nutzen der Einstufung.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Begruendung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Begründung für die Umstufung des Nutzens im Rahmen der Plausibilisierung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Das ist eine Begründung.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung_Plausibilisierung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bemerkungen zur Plausibilisierung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Das ist eine Bemerkung zur Plausibilisierung.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Massnahme</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Festlegung möglicher Massnahmen zur Optimierung der Längsvernetzung.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Das ist die Beschreibung einer Massnahme.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>[todo: Wertebereich prüfen] Prioritaet</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Priorisierung ausgewählter Hindernisse für die anstehende Umsetzungsetappe.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Das ist meine Priorisierung.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Beziehungsattribute</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rBauaufwand</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zum Katalog "Bauaufwand"</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ccee2bad-419e-454e-9e0f-9ef2ae2d4d44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rPotenzial</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zum Katalog "Potenzial"</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ccee2bad-419e-454e-9e0f-9ef2ae2d4d44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rPraeferenz</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zum Katalog "Praeferenz"</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ccee2bad-419e-454e-9e0f-9ef2ae2d4d44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rGISNutzen</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zum Katalog "Nutzen"; aufgrund der identischen Werte nutzt der "GIS-Nutzen" die Einträge des Katalogs "Nutzen".</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ccee2bad-419e-454e-9e0f-9ef2ae2d4d44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Geometrie</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock">- - -</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Bedingungen</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Identifikator_Absturz</code></p></td>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Der Wert muss mit einer OID der Klasse <code>SZ_Oekomorphologie_Fliessgewaesser_V1_1.Oekomorphologie.Absturz</code> übereinstimmen.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_klasse_absturz"><a class="anchor" href="#_klasse_absturz"></a><a class="link" href="#_klasse_absturz">4.2.7. Klasse <code>Absturz</code></a></h4>
+<div class="paragraph">
+<p>Die Klasse <code>Absturz</code> führt die Identifikatoren (OID) jener Abstürze, welche zu einer Hindernisgruppe zusammengefasst werden. Die Klasse hat keine Entsprechung im Bundesmodell. Sie ist eine kantonale Erweiterung.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+<th class="tableblock halign-left valign-top">Beispiel</th>
+<th class="tableblock halign-left valign-top">Freigabe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>erfasstVon</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Musterha</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>erfasstAm</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1980-03-21T15:38:12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>geaendertVon</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Muelleran</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>geaendertAm</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024-07-30T08:07:57</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Identifikator_Absturz</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifikator (OID) des Absturzes im Modell "SZ_Oekomorphologie_Fliessgewaesser_V1_1".<br>
+Im Sinne unabhängiger Datenmodelle wird die lose Koppelung der Daten bevorzugt und auf die Modellierung eines Fremdschlüsselattributes verzichtet.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ccee2bad-419e-454e-9e0f-9ef2ae2d4d44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Beziehungsattribute</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rGruppe</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zur Klasse "Bauwerksbewertung"</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ccee2bad-419e-454e-9e0f-9ef2ae2d4d44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Geometrie</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock">- - -</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Bedingungen</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Identifikator_Absturz</code></p></td>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Der Wert muss mit einer OID der Klasse <code>SZ_Oekomorphologie_Fliessgewaesser_V1_1.Oekomorphologie.Absturz</code> übereinstimmen.</p></td>
 </tr>
 </tbody>
 </table>
@@ -821,7 +1350,7 @@ Person 2 (Kürzel 2), Amt 2</p></td>
 <h2 id="_modelltransformationen"><a class="anchor" href="#_modelltransformationen"></a><a class="link" href="#_modelltransformationen">5. Modelltransformationen</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_transformation_vom_bearbeitungsmodell_ins_publikationsmodell"><a class="anchor" href="#_transformation_vom_bearbeitungsmodell_ins_publikationsmodell"></a><a class="link" href="#_transformation_vom_bearbeitungsmodell_ins_publikationsmodell">5.1. Transformation vom Bearbeitungsmodell ins Publikationsmodell</a></h3>
+<h3 id="_todo_transformation_vom_bearbeitungsmodell_ins_publikationsmodell"><a class="anchor" href="#_todo_transformation_vom_bearbeitungsmodell_ins_publikationsmodell"></a><a class="link" href="#_todo_transformation_vom_bearbeitungsmodell_ins_publikationsmodell">5.1. [todo] Transformation vom Bearbeitungsmodell ins Publikationsmodell</a></h3>
 <div class="ulist">
 <ul>
 <li>
@@ -841,112 +1370,30 @@ Person 2 (Kürzel 2), Amt 2</p></td>
 <p>Quellmodell: Das hier beschriebene Datenmodell</p>
 </li>
 <li>
-<p>Zielmodell: <a href="http://models.geo.admin.ch/BAFU/todo">&lt;Modellname&gt; (Version: 2023-03-20)</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_transformation_ins_transfermodell_öreb_kataster"><a class="anchor" href="#_transformation_ins_transfermodell_öreb_kataster"></a><a class="link" href="#_transformation_ins_transfermodell_öreb_kataster">5.3. Transformation ins Transfermodell ÖREB-Kataster</a></h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Quellmodell: Das hier beschriebene Datenmodell</p>
-</li>
-<li>
-<p>Zielmodell: <a href="https://models.geo.admin.ch/V_D/OeREB/OeREBKRMtrsfr_V2_0.ili">OeREBKRMtrsfr_V2_0 (Version: 2021-04-14)</a></p>
+<p>Zielmodell: <a href="https://models.geo.admin.ch/BAFU/Revitalisierung_Fliessgewaesser_V1_2.ili">Revitalisierung_Fliessgewaesser_V1_2 (Version: 2024-06-13)</a></p>
 </li>
 </ul>
 </div>
 <div class="sect3">
-<h4 id="_klasse_darstellungsdienst"><a class="anchor" href="#_klasse_darstellungsdienst"></a><a class="link" href="#_klasse_darstellungsdienst">5.3.1. Klasse <code>DarstellungsDienst</code></a></h4>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Quellattribut</th>
-<th class="tableblock halign-left valign-top">Zielattribut</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ch.sz.a094b.oereb.wald.statische_waldgrenze.linie</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>VerweisWMS</code></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="_klasse_eigentumsbeschraenkung"><a class="anchor" href="#_klasse_eigentumsbeschraenkung"></a><a class="link" href="#_klasse_eigentumsbeschraenkung">5.3.2. Klasse <code>Eigentumsbeschraenkung</code></a></h4>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Quellattribut</th>
-<th class="tableblock halign-left valign-top">Zielattribut</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Der Wert für <code>Rechtsstatus</code> wird regelbasiert abgeleitet (siehe unten)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Rechtsstatus</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datum, an dem die Publikation im ÖREB-Katastersystem erfolgt; wird durch den Publikationsprozess gesetzt</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>publiziertAb</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(aktuell nicht verwendet und daher leer)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>publiziertBis</code></p></td>
-</tr>
-</tbody>
-</table>
+<h4 id="_klasse_abschoekomorph"><a class="anchor" href="#_klasse_abschoekomorph"></a><a class="link" href="#_klasse_abschoekomorph">5.2.1. Klasse <code>AbschOekomorph</code></a></h4>
 <div class="paragraph">
-<p>Regeln für die Ableitung des Wertes für <code>Rechtsstatus</code>:</p>
+<p>Die Daten zu dieser Klasse werden im Thema A026 geführt. Die Transformationsregel finden sich <a href="https://ch-sz-geo.github.io/A026/docs/modelldokumentation.html#_transformation_ins_minimale_geodatenmodell_des_bundes">hier</a>.</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Regel</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Rechtsstatus</p></th>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Der Wert von <code>Waldgrenze.Begruendungsverfahren</code> muss gesetzt sein und der Wert von <code>Waldgrenze.Aufhebungsverfahren</code> muss leer sein.<br>
-Zudem darf der Code des Waldfeststellungstatus <code>Verfahrensstatus.Code</code> (hergeleitet über <code>Waldfeststellung.rVerfahrensstatus</code>) nicht einer der folgenden Werte aufweisen: 'abgeschlossen', 'abgeschlossen_ohne_Verfuegung', 'unbekannt'.</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>laufendeAenderung_Begruendung</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Der Wert von <code>Waldgrenze.Begruendungsverfahren</code> muss gesetzt sein und der Wert von <code>Waldgrenze.Aufhebungsverfahren</code> muss leer sein.<br>
-Zudem muss der Code des Waldfeststellungstatus <code>Verfahrensstatus.Code</code> (hergeleitet über <code>Waldfeststellung.rVerfahrensstatus</code>) den Wert 'abgeschlossen' aufweisen.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>inKraft</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Die Werte von <code>Waldgrenze.Begruendungsverfahren</code> und <code>Waldgrenze.Aufhebungsverfahren</code> müssen gesetzt sein.<br>
-Zudem darf der Code des Waldfeststellungstatus <code>Verfahrensstatus.Code</code> des Aufhebungsverfahrens (hergeleitet über <code>Waldfeststellung.rVerfahrensstatus</code>) nicht einer der folgenden Werte aufweisen: 'abgeschlossen', 'abgeschlossen_ohne_Verfuegung', 'unbekannt'.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>laufendeAenderung_Aufhebung</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Die Werte von <code>Waldgrenze.Begruendungsverfahren</code> und <code>Waldgrenze.Aufhebungsverfahren</code> müssen gesetzt sein.<br>
-Zudem muss der Code des Waldfeststellungstatus <code>Verfahrensstatus.Code</code> des Aufhebungsverfahrens (hergeleitet über <code>Waldfeststellung.rVerfahrensstatus</code>) den Wert 'abgeschlossen' aufweisen.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>inKraft_Aufhebung</code></p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="sect3">
-<h4 id="_klasse_geometrie"><a class="anchor" href="#_klasse_geometrie"></a><a class="link" href="#_klasse_geometrie">5.3.3. Klasse <code>Geometrie</code></a></h4>
+<h4 id="_klasse_absturz_2"><a class="anchor" href="#_klasse_absturz_2"></a><a class="link" href="#_klasse_absturz_2">5.2.2. Klasse <code>Absturz</code></a></h4>
+<div class="paragraph">
+<p>Die Daten zu dieser Klasse werden im Thema A026 geführt. Die Transformationsregel finden sich <a href="https://ch-sz-geo.github.io/A026/docs/modelldokumentation.html#_transformation_ins_minimale_geodatenmodell_des_bundes">hier</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_klasse_bauwerk_2"><a class="anchor" href="#_klasse_bauwerk_2"></a><a class="link" href="#_klasse_bauwerk_2">5.2.3. Klasse <code>Bauwerk</code></a></h4>
+<div class="paragraph">
+<p>Die Daten zu dieser Klasse werden im Thema A026 geführt. Die Transformationsregel finden sich <a href="https://ch-sz-geo.github.io/A026/docs/modelldokumentation.html#_transformation_ins_minimale_geodatenmodell_des_bundes">hier</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_klasse_abschoeb"><a class="anchor" href="#_klasse_abschoeb"></a><a class="link" href="#_klasse_abschoeb">5.2.4. Klasse <code>AbschOEB</code></a></h4>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -960,38 +1407,23 @@ Zudem muss der Code des Waldfeststellungstatus <code>Verfahrensstatus.Code</code
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- - -</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Punkt</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Liniengeometrie, gebildet über die lineare Referenzierung auf der Grundlage von <code>Achsgeometrie</code> sowie <code>LinearpositionVon</code> und <code>LinearpositionBis</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Abschnitt</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Waldgrenze.Geometrie</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Linie</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wert von <code>Bewertung.OID</code><br>
+hergeleitet über <code>Bewertung__Abschnittsbewertung.rBewertung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OEB</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- - -</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Flaeche</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog <code>Eigentumsbeschraenkung.Rechtsstatus</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Rechtsstatus</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog <code>Eigentumsbeschraenkung.publiziertAb</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>publiziertAb</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog <code>Eigentumsbeschraenkung.publiziertBis</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>publiziertBis</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/8646c41b-543e-401f-836d-4b6beca7370d">Link auf GeoCat</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>MetadatenGeobasisdaten</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung</code></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_klasse_legendeeintrag"><a class="anchor" href="#_klasse_legendeeintrag"></a><a class="link" href="#_klasse_legendeeintrag">5.3.4. Klasse <code>LegendeEintrag</code></a></h4>
+<h4 id="_klasse_abschnutzen"><a class="anchor" href="#_klasse_abschnutzen"></a><a class="link" href="#_klasse_abschnutzen">5.2.5. Klasse <code>AbschNutzen</code></a></h4>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -1005,35 +1437,64 @@ Zudem muss der Code des Waldfeststellungstatus <code>Verfahrensstatus.Code</code
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Typ.Symbol</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Symbol</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Liniengeometrie, gebildet über die lineare Referenzierung auf der Grundlage von <code>Achsgeometrie</code> sowie <code>LinearpositionVon</code> und <code>LinearpositionBis</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Abschnitt</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Typ.Name</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LegendeText</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wert von <code>Nutzen.OID</code><br>
+hergeleitet über <code>Nutzen__Abschnittsnutzen.rNutzen</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Nutzen</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Typ.Code</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ArtCode</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="https://data.geo.sz.ch/public/Themen/A057b/">Legende.xml</a></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ArtCodeliste</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">fix: " <code>ch.StatischeWaldgrenzen</code> "</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Thema</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- - -</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SubThema</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung</code></p></td>
 </tr>
 </tbody>
 </table>
+</div>
+<div class="sect3">
+<h4 id="_klasse_abschprio"><a class="anchor" href="#_klasse_abschprio"></a><a class="link" href="#_klasse_abschprio">5.2.6. Klasse <code>AbschPrio</code></a></h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Quellattribut</th>
+<th class="tableblock halign-left valign-top">Zielattribut</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Liniengeometrie, gebildet über die lineare Referenzierung auf der Grundlage von <code>Achsgeometrie</code> sowie <code>LinearpositionVon</code> und <code>LinearpositionBis</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Abschnitt</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Frist</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Frist</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wert von <code>Massnahme.OID</code><br>
+hergeleitet über <code>Massnahme__Abschnittsprioritaet.rMassnahme</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Massnahmen</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_klasse_absturznutzen"><a class="anchor" href="#_klasse_absturznutzen"></a><a class="link" href="#_klasse_absturznutzen">5.2.7. Klasse <code>AbsturzNutzen</code></a></h4>
+<div class="paragraph">
+<p>Die Daten zu dieser Klasse werden im Thema A026 geführt. Die Transformationsregel finden sich <a href="https://github.com/ch-sz-geo/A026/blob/main/docs/modelldokumentation/transformation.adoc#transformation-ins-minimale-geodatenmodell-des-bundes">hier</a>.</p>
+</div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_transformation_ins_webgis"><a class="anchor" href="#_transformation_ins_webgis"></a><a class="link" href="#_transformation_ins_webgis">5.4. Transformation ins WebGIS</a></h3>
+<h3 id="_todo_transformation_ins_webgis"><a class="anchor" href="#_todo_transformation_ins_webgis"></a><a class="link" href="#_todo_transformation_ins_webgis">5.3. [todo] Transformation ins WebGIS</a></h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1045,7 +1506,7 @@ Zudem muss der Code des Waldfeststellungstatus <code>Verfahrensstatus.Code</code
 </ul>
 </div>
 <div class="sect3">
-<h4 id="_allgemeines_2"><a class="anchor" href="#_allgemeines_2"></a><a class="link" href="#_allgemeines_2">5.4.1. Allgemeines</a></h4>
+<h4 id="_allgemeines_2"><a class="anchor" href="#_allgemeines_2"></a><a class="link" href="#_allgemeines_2">5.3.1. Allgemeines</a></h4>
 <div class="paragraph">
 <p>Für die WebGIS-Publikation werden die Daten optimiert. Dies ist häufig mit einer Denormalisierung verbunden ("flachwalzen" der Daten). Der Attributumfang richtet sich nach den Anforderungen der zuständigen Stelle und ist im Normalfall geringer als im Ausgangsmodell. Eine weitere Besonderheit kommt den Tabellen der WebGIS-Datenbank zu. Sie weisen Standard-Spalten auf, welche nicht Teil des Datenmodells sind. Es handelt sich um folgende Spalten:</p>
 </div>
@@ -1086,108 +1547,13 @@ Zudem muss der Code des Waldfeststellungstatus <code>Verfahrensstatus.Code</code
 <p>Das WebGIS bezieht die Daten direkt aus der Datenbank. Aus diesem Grund wird nachfolgend von "Tabelle" und "Spalte" anstelle von "Klasse" und "Attribut" gesprochen. Der Klassenname erscheint lediglich in der Überschrift.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_tabelle_der_waldgrenze"><a class="anchor" href="#_tabelle_der_waldgrenze"></a><a class="link" href="#_tabelle_der_waldgrenze">5.4.2. Tabelle der <code>Waldgrenze</code></a></h4>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Quellattribut</th>
-<th class="tableblock halign-left valign-top">Zielspalte</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- - -</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Standardspalten gemäss den Angaben oben)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Typ.Code</code><br>
-hergeleitet über <code>Waldgrenze.rTyp</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>typ</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Typ.Name</code><br>
-hergeleitet über <code>Waldgrenze.rTyp</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>bezeichnung</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Waldgrenze.Geometrie</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>geom</code></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="_tabelle_der_stockgrenze"><a class="anchor" href="#_tabelle_der_stockgrenze"></a><a class="link" href="#_tabelle_der_stockgrenze">5.4.3. Tabelle der <code>Stockgrenze</code></a></h4>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Quellattribut</th>
-<th class="tableblock halign-left valign-top">Zielspalte</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- - -</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Standardspalten gemäss den Angaben oben)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Verfahren.Verfuegungsnummer</code><br>
-hergeleitet über:<br>
-<code>Stockgrenze.rWaldgrenze</code> &#x2192;<br>
-<code>Waldgrenze.Begruendungsverfahren</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>verfuegung_datum_nr</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Stockgrenze.Geometrie</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>geom</code></p></td>
-</tr>
-</tbody>
-</table>
-<table class="tableblock frame-all grid-all" style="width: 25%;">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>1</em></p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><strong>2</strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock"><strong>4</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><em>5</em></p></td>
-<td class="tableblock halign-center valign-middle" colspan="2" rowspan="2"><p class="tableblock"><code>6</code></p></td>
-<td class="tableblock halign-left valign-bottom" rowspan="3"><p class="tableblock"><code>7</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><em>8</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>9</em></p></td>
-<td class="tableblock halign-right valign-top" colspan="2"><p class="tableblock"><code>10</code></p></td>
-</tr>
-</tbody>
-</table>
-</div>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-02-03 13:11:06 UTC
+Last updated 2026-04-15 13:37:00 UTC
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
