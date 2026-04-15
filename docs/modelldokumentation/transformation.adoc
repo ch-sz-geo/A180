@@ -1,75 +1,56 @@
 == Modelltransformationen
-=== Transformation vom Bearbeitungsmodell ins Publikationsmodell
+=== [todo] Transformation vom Bearbeitungsmodell ins Publikationsmodell
 * Quellmodell: https://raw.githubusercontent.com/ch-sz-geo/A064/refs/heads/main/models/SZ_Schutzwald_V1_Bearbeitung.ili[Bearbeitungsmodell "SZ_Schutzwald_V1" (Version: 2025-01-23)]
 * Zielmodell: https://raw.githubusercontent.com/ch-sz-geo/A064/refs/heads/main/models/SZ_Schutzwald_V1.ili[Publikationsmodell verwaltungsintern "SZ_Schutzwald_V1_Bearbeitung" (Version: 2025-01-23)]
 
 === Transformation ins minimale Geodatenmodell des Bundes
 * Quellmodell: Das hier beschriebene Datenmodell
-* Zielmodell: http://models.geo.admin.ch/BAFU/todo[<Modellname> (Version: 2023-03-20)]
+* Zielmodell: https://models.geo.admin.ch/BAFU/Revitalisierung_Fliessgewaesser_V1_2.ili[Revitalisierung_Fliessgewaesser_V1_2 (Version: 2024-06-13)]
 
-=== Transformation ins Transfermodell ÖREB-Kataster
-* Quellmodell: Das hier beschriebene Datenmodell
-* Zielmodell: https://models.geo.admin.ch/V_D/OeREB/OeREBKRMtrsfr_V2_0.ili[OeREBKRMtrsfr_V2_0 (Version: 2021-04-14)]
+==== Klasse `+AbschOekomorph+`
+Die Daten zu dieser Klasse werden im Thema A026 geführt. Die Transformationsregel finden sich https://ch-sz-geo.github.io/A026/docs/modelldokumentation.html#_transformation_ins_minimale_geodatenmodell_des_bundes[hier].
 
-==== Klasse `+DarstellungsDienst+`
+==== Klasse `+Absturz+`
+Die Daten zu dieser Klasse werden im Thema A026 geführt. Die Transformationsregel finden sich https://ch-sz-geo.github.io/A026/docs/modelldokumentation.html#_transformation_ins_minimale_geodatenmodell_des_bundes[hier].
+
+==== Klasse `+Bauwerk+`
+Die Daten zu dieser Klasse werden im Thema A026 geführt. Die Transformationsregel finden sich https://ch-sz-geo.github.io/A026/docs/modelldokumentation.html#_transformation_ins_minimale_geodatenmodell_des_bundes[hier].
+
+==== Klasse `+AbschOEB+`
 [cols=2*,options="header"]
 |===
 | Quellattribut | Zielattribut
-| `+ch.sz.a094b.oereb.wald.statische_waldgrenze.linie+`
-| `+VerweisWMS+`
+|  Liniengeometrie, gebildet über die lineare Referenzierung auf der Grundlage von `+Achsgeometrie+` sowie `+LinearpositionVon+` und `+LinearpositionBis+` | `+Abschnitt+`
+| Wert von `+Bewertung.OID+` +
+hergeleitet über `+Bewertung__Abschnittsbewertung.rBewertung+` | `+OEB+`
+| `+Bemerkung+` | `+Bemerkung+`
 |===
 
-==== Klasse `+Eigentumsbeschraenkung+`
+==== Klasse `+AbschNutzen+`
 [cols=2*,options="header"]
 |===
 | Quellattribut | Zielattribut
-| Der Wert für `+Rechtsstatus+` wird regelbasiert abgeleitet (siehe unten) | `+Rechtsstatus+`
-| Datum, an dem die Publikation im ÖREB-Katastersystem erfolgt; wird durch den Publikationsprozess gesetzt m| publiziertAb
-| (aktuell nicht verwendet und daher leer) m| publiziertBis
+|  Liniengeometrie, gebildet über die lineare Referenzierung auf der Grundlage von `+Achsgeometrie+` sowie `+LinearpositionVon+` und `+LinearpositionBis+` | `+Abschnitt+`
+| Wert von `+Nutzen.OID+` +
+hergeleitet über `+Nutzen__Abschnittsnutzen.rNutzen+` | `+Nutzen+`
+| `+Bemerkung+` | `+Bemerkung+`
 |===
 
-Regeln für die Ableitung des Wertes für `+Rechtsstatus+`:
-|===
-h| Regel h| Rechtsstatus
-a| Der Wert von `+Waldgrenze.Begruendungsverfahren+` muss gesetzt sein und der Wert von `+Waldgrenze.Aufhebungsverfahren+` muss leer sein. +
-Zudem darf der Code des Waldfeststellungstatus `+Verfahrensstatus.Code+` (hergeleitet über `+Waldfeststellung.rVerfahrensstatus+`) nicht einer der folgenden Werte aufweisen: 'abgeschlossen', 'abgeschlossen_ohne_Verfuegung', 'unbekannt'.
-| `+laufendeAenderung_Begruendung+`
-| Der Wert von `+Waldgrenze.Begruendungsverfahren+` muss gesetzt sein und der Wert von `+Waldgrenze.Aufhebungsverfahren+` muss leer sein. +
-Zudem muss der Code des Waldfeststellungstatus `+Verfahrensstatus.Code+` (hergeleitet über `+Waldfeststellung.rVerfahrensstatus+`) den Wert 'abgeschlossen' aufweisen. | `+inKraft+`
-| Die Werte von `+Waldgrenze.Begruendungsverfahren+` und `+Waldgrenze.Aufhebungsverfahren+` müssen gesetzt sein. +
-Zudem darf der Code des Waldfeststellungstatus `+Verfahrensstatus.Code+` des Aufhebungsverfahrens (hergeleitet über `+Waldfeststellung.rVerfahrensstatus+`) nicht einer der folgenden Werte aufweisen: 'abgeschlossen', 'abgeschlossen_ohne_Verfuegung', 'unbekannt'.
-| `+laufendeAenderung_Aufhebung+`
-| Die Werte von `+Waldgrenze.Begruendungsverfahren+` und `+Waldgrenze.Aufhebungsverfahren+` müssen gesetzt sein. +
-Zudem muss der Code des Waldfeststellungstatus `+Verfahrensstatus.Code+` des Aufhebungsverfahrens (hergeleitet über `+Waldfeststellung.rVerfahrensstatus+`) den Wert 'abgeschlossen' aufweisen.
-| `+inKraft_Aufhebung+`
-|===
-
-==== Klasse `+Geometrie+`
+==== Klasse `+AbschPrio+`
 [cols=2*,options="header"]
 |===
 | Quellattribut | Zielattribut
-| - - - m| Punkt
-m| Waldgrenze.Geometrie m| Linie
-| - - - m| Flaeche
-| analog `+Eigentumsbeschraenkung.Rechtsstatus+` m| Rechtsstatus
-| analog `+Eigentumsbeschraenkung.publiziertAb+` m| publiziertAb
-| analog `+Eigentumsbeschraenkung.publiziertBis+` m| publiziertBis
-| https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/8646c41b-543e-401f-836d-4b6beca7370d[Link auf GeoCat] m| MetadatenGeobasisdaten
+|  Liniengeometrie, gebildet über die lineare Referenzierung auf der Grundlage von `+Achsgeometrie+` sowie `+LinearpositionVon+` und `+LinearpositionBis+` | `+Abschnitt+`
+| `+Frist+` | `+Frist+`
+| Wert von `+Massnahme.OID+` +
+hergeleitet über `+Massnahme__Abschnittsprioritaet.rMassnahme+` | `+Massnahmen+`
+| `+Bemerkung+` | `+Bemerkung+`
 |===
 
-==== Klasse `+LegendeEintrag+`
-[cols=2*,options="header"]
-|===
-| Quellattribut | Zielattribut
-m| Typ.Symbol m| Symbol
-m| Typ.Name m| LegendeText
-m| Typ.Code m| ArtCode
-m| https://data.geo.sz.ch/public/Themen/A057b/[Legende.xml] m| ArtCodeliste
-| fix: " `+ch.StatischeWaldgrenzen+` " m| Thema
-| - - - m| SubThema
-|===
+==== Klasse `+AbsturzNutzen+`
+Die Daten zu dieser Klasse werden im Thema A026 geführt. Die Transformationsregel finden sich https://github.com/ch-sz-geo/A026/blob/main/docs/modelldokumentation/transformation.adoc#transformation-ins-minimale-geodatenmodell-des-bundes[hier].
 
-=== Transformation ins WebGIS
+=== [todo] Transformation ins WebGIS
 * Quellmodell: Das hier beschriebene Datenmodell
 * Zielmodell: keines (siehe unten)
 
@@ -87,40 +68,6 @@ m| asof_dt | Datum, an dem am Datensatz die letzten Änderungen vorgenommen wurd
 |===
 
 Das WebGIS bezieht die Daten direkt aus der Datenbank. Aus diesem Grund wird nachfolgend von "Tabelle" und "Spalte" anstelle von "Klasse" und "Attribut" gesprochen. Der Klassenname erscheint lediglich in der Überschrift.
-
-==== Tabelle der `+Waldgrenze+`
-[cols=2*,options="header"]
-|===
-| Quellattribut | Zielspalte
-| - - - | (Standardspalten gemäss den Angaben oben)
-| `+Typ.Code+` +
-hergeleitet über `+Waldgrenze.rTyp+` m| typ
-| `+Typ.Name+` +
-hergeleitet über `+Waldgrenze.rTyp+` m| bezeichnung
-m| Waldgrenze.Geometrie m| geom
-|===
-
-==== Tabelle der `+Stockgrenze+`
-[cols=2*,options="header"]
-|===
-| Quellattribut | Zielspalte
-| - - - | (Standardspalten gemäss den Angaben oben)
-| `+Verfahren.Verfuegungsnummer+` +
-hergeleitet über: +
-`+Stockgrenze.rWaldgrenze+` &#x2192; +
-`+Waldgrenze.Begruendungsverfahren+`
-m| verfuegung_datum_nr
-m| Stockgrenze.Geometrie m| geom
-|===
-
-[cols="e,m,^,>s",width="25%"]
-|===
-|1 >s|2 |3 |4
-^|5 2.2+^.^|6 .3+<.>m|7
-^|8
-|9 2+>|10
-|===
-
 
 ifdef::backend-pdf[]
 <<<
