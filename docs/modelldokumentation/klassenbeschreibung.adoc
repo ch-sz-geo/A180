@@ -75,6 +75,7 @@ m|Name
 |===
 
 Ab hier folgend die neuen Stammdaten aufgrund der Änderungswünsche des Auftragnehmers:
+
 ==== Klasse `+Bauaufwand+`
 Die Klasse `+Bauaufwand+` führt die Werte des Katalogs "Bauaufwand". Sie ist eine Spezialisierung der Klasse `+Katalogeintrag+`.
 
@@ -275,6 +276,7 @@ m| rMassnahme
 |===
 
 Ab hier folgend die neuen Stammdaten aufgrund der Änderungswünsche des Auftragnehmers:
+
 ==== Klasse `+Bauwerksbewertung+`
 Die Klasse `+Bauwerksbewertung+` führt die Bewertung des Bauwerks. Die Klasse hat keine Entsprechung im Bundesmodell. Sie ist eine kantonale Erweiterung.
 
@@ -298,7 +300,8 @@ m| geaendertAm
 | 2024-07-30T08:07:57
 | öffentlich
 m| Identifikator_Bauwerk
-| Identifikator (OID) des Bauwerks im Modell "SZ_Oekomorphologie_Fliessgewaesser_V1_1"
+| Identifikator (OID) des Bauwerks im Modell "SZ_Oekomorphologie_Fliessgewaesser_V1_1". +
+Im Sinne unabhängiger Datenmodelle wird die lose Koppelung der Daten bevorzugt und auf die Modellierung eines Fremdschlüsselattributes verzichtet.
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
 | öffentlich
 m| Identifikator_Quellsystem
@@ -369,9 +372,186 @@ m| rGISNutzen
 4+| *Geometrie*
 4+| - - -
 4+| *Bedingungen*
-4+| - - -
+m| Identifikator_Bauwerk
+3+| Der Wert muss mit einer OID der Klasse `+SZ_Oekomorphologie_Fliessgewaesser_V1_1.Oekomorphologie.Bauwerk+` übereinstimmen.
 |===
 
+==== Klasse `+Bauwerk+`
+Die Klasse `+Bauwerk+` führt die Identifikatoren (OID) jener Bauwerke, welche zu einer Hindernisgruppe zusammengefasst werden. Die Klasse hat keine Entsprechung im Bundesmodell. Sie ist eine kantonale Erweiterung.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+m| erfasstVon
+| Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
+| Musterha
+| +++<span style="color:red;">intern</span>+++
+m| erfasstAm
+| Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
+| 1980-03-21T15:38:12
+| öffentlich
+m| geaendertVon
+| Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
+| Muelleran
+| +++<span style="color:red;">intern</span>+++
+m| geaendertAm
+| Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
+| 2024-07-30T08:07:57
+| öffentlich
+m| Identifikator_Bauwerk
+| Identifikator (OID) des Bauwerks im Modell "SZ_Oekomorphologie_Fliessgewaesser_V1_1". +
+Im Sinne unabhängiger Datenmodelle wird die lose Koppelung der Daten bevorzugt und auf die Modellierung eines Fremdschlüsselattributes verzichtet.
+| ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
+| öffentlich
+4+| *Beziehungsattribute*
+m| rGruppe
+| Fremdschlüssel zur Klasse "Bauwerksbewertung"
+| ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
+| öffentlich
+4+| *Geometrie*
+4+| - - -
+4+| *Bedingungen*
+m| Identifikator_Bauwerk
+3+| Der Wert muss mit einer OID der Klasse `+SZ_Oekomorphologie_Fliessgewaesser_V1_1.Oekomorphologie.Bauwerk+` übereinstimmen.
+|===
+
+==== Klasse `+Absturzbewertung+`
+Die Klasse `+Absturzbewertung+` führt die Bewertung der Abstürze. Die Klasse hat keine Entsprechung im Bundesmodell. Sie ist eine kantonale Erweiterung.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+m| erfasstVon
+| Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
+| Musterha
+| +++<span style="color:red;">intern</span>+++
+m| erfasstAm
+| Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
+| 1980-03-21T15:38:12
+| öffentlich
+m| geaendertVon
+| Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
+| Muelleran
+| +++<span style="color:red;">intern</span>+++
+m| geaendertAm
+| Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
+| 2024-07-30T08:07:57
+| öffentlich
+m| Identifikator_Absturz
+| Identifikator (OID) des Absturzes im Modell "SZ_Oekomorphologie_Fliessgewaesser_V1_1". +
+Im Sinne unabhängiger Datenmodelle wird die lose Koppelung der Daten bevorzugt und auf die Modellierung eines Fremdschlüsselattributes verzichtet.
+| ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
+| öffentlich
+m| Identifikator_Quellsystem
+| Identifikator gemäss dem Quellsystem, in welchem das Objekt erzeugt wurde.
+| 12345
+| öffentlich
+m| Sohlengefaelle
+| [todo: prüfen] Gefälle der Sohle an der Stelle des Bauwerks in Promille. Berechnet aus DTM und des Gewässernetzes.
+| 8.5
+| öffentlich
+m| Habitatsvergroesserungsindex
+| [todo: prüfen] Gerechneter, indexierter Wert zur Habitatsvergrösserung
+| 750
+| öffentlich
+m| hatFeldbegehung
+| Angabe, ob die Beurteilung aufgrund einer Feldbegehung erfolgte oder nicht
+| ja
+| öffentlich
+m| istNutzenoptimiert
+| Angabe, ob mit geringem Aufwand ein grosser Nutzen erzielt werden kann (low hanging fruit).
+| ja
+| öffentlich
+m| Bemerkung_Feldaufnahme
+| Bemerkungen zur Feldaufnnahme
+| Die Feldaufnahme erfolgte bei strahlendem Sonnenschein.
+| öffentlich
+m| Bemerkung_Feldrelevanz
+| Bemerkungen zur Feldrelevanz
+| Das ist eine Bemerkung zur Feldrelevanz.
+| öffentlich
+m| Bemerkung_Nutzen
+| Bemerkungen zur Einstufung des Nutzens
+| Das ist eine Bemerkung zum Nutzen der Einstufung.
+| öffentlich
+m| Begruendung
+| Begründung für die Umstufung des Nutzens im Rahmen der Plausibilisierung
+| Das ist eine Begründung.
+| öffentlich
+m| Bemerkung_Plausibilisierung
+| Bemerkungen zur Plausibilisierung
+| Das ist eine Bemerkung zur Plausibilisierung.
+| öffentlich
+m| Massnahme
+| Festlegung möglicher Massnahmen zur Optimierung der Längsvernetzung.
+| Das ist die Beschreibung einer Massnahme.
+| öffentlich
+m| [todo: Wertebereich prüfen] Prioritaet
+| Priorisierung ausgewählter Hindernisse für die anstehende Umsetzungsetappe.
+| Das ist meine Priorisierung.
+| öffentlich
+4+| *Beziehungsattribute*
+m| rBauaufwand
+| Fremdschlüssel zum Katalog "Bauaufwand"
+| ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
+| öffentlich
+m| rPotenzial
+| Fremdschlüssel zum Katalog "Potenzial"
+| ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
+| öffentlich
+m| rPraeferenz
+| Fremdschlüssel zum Katalog "Praeferenz"
+| ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
+| öffentlich
+m| rGISNutzen
+| Fremdschlüssel zum Katalog "Nutzen"; aufgrund der identischen Werte nutzt der "GIS-Nutzen" die Einträge des Katalogs "Nutzen".
+| ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
+| öffentlich
+4+| *Geometrie*
+4+| - - -
+4+| *Bedingungen*
+m| Identifikator_Absturz
+3+| Der Wert muss mit einer OID der Klasse `+SZ_Oekomorphologie_Fliessgewaesser_V1_1.Oekomorphologie.Absturz+` übereinstimmen.
+|===
+
+==== Klasse `+Absturz+`
+Die Klasse `+Absturz+` führt die Identifikatoren (OID) jener Abstürze, welche zu einer Hindernisgruppe zusammengefasst werden. Die Klasse hat keine Entsprechung im Bundesmodell. Sie ist eine kantonale Erweiterung.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+m| erfasstVon
+| Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
+| Musterha
+| +++<span style="color:red;">intern</span>+++
+m| erfasstAm
+| Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
+| 1980-03-21T15:38:12
+| öffentlich
+m| geaendertVon
+| Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
+| Muelleran
+| +++<span style="color:red;">intern</span>+++
+m| geaendertAm
+| Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
+| 2024-07-30T08:07:57
+| öffentlich
+m| Identifikator_Absturz
+| Identifikator (OID) des Absturzes im Modell "SZ_Oekomorphologie_Fliessgewaesser_V1_1". +
+Im Sinne unabhängiger Datenmodelle wird die lose Koppelung der Daten bevorzugt und auf die Modellierung eines Fremdschlüsselattributes verzichtet.
+| ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
+| öffentlich
+4+| *Beziehungsattribute*
+m| rGruppe
+| Fremdschlüssel zur Klasse "Bauwerksbewertung"
+| ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
+| öffentlich
+4+| *Geometrie*
+4+| - - -
+4+| *Bedingungen*
+m| Identifikator_Absturz
+3+| Der Wert muss mit einer OID der Klasse `+SZ_Oekomorphologie_Fliessgewaesser_V1_1.Oekomorphologie.Absturz+` übereinstimmen.
+|===
 
 ifdef::backend-pdf[]
 <<<
