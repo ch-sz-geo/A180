@@ -122,7 +122,7 @@ m|Name
 Das Topic `+Fachdaten+` umfasst die eigentlichen, fachlichen Klassen des Themas.
 
 ==== Klasse `+Abschnittsbewertung+`
-Die Klasse `+Abschnittsbewertung+` führt die Bewertung des Abschnittes hinsichtlich des ökomorphologischen Potenzials. Im Bundesmodell entspricht dies der Klasse `+AbschOEB+`.
+Die Klasse `+Abschnittsbewertung+` führt die Informationen über die Bewertung des Abschnittes hinsichtlich des ökomorphologischen Potenzials. Im Bundesmodell entspricht dies der Klasse `+AbschOEB+`.
 
 [cols=4*,options="header"]
 |===
@@ -172,7 +172,7 @@ m| rBewertung
 |===
 
 ==== Klasse `+Abschnittsnutzen+`
-Die Klasse `+Abschnittsnutzen+` führt die Bewertung des Abschnittes hinsichtlich des ökomorphologischen Potenzials. Im Bundesmodell entspricht dies der Klasse `+AbschNutzen+`.
+Die Klasse `+Abschnittsnutzen+` führt die Informationen über die Bewertung des Abschnittes hinsichtlich des ökomorphologischen Potenzials. Im Bundesmodell entspricht dies der Klasse `+AbschNutzen+`.
 
 [cols=4*,options="header"]
 |===
@@ -222,7 +222,7 @@ m| rNutzen
 |===
 
 ==== Klasse `+Abschnittsprioritaet+`
-Die Klasse `+Abschnittsprioritaet+` führt die Bewertung des Abschnittes hinsichtlich des ökomorphologischen Potenzials. Im Bundesmodell entspricht dies der Klasse `+AbschPrio+`.
+Die Klasse `+Abschnittsprioritaet+` führt die Informationen zur Priorisierung eines Abschnittes hinsichtlich des ökomorphologischen Potenzials. Im Bundesmodell entspricht dies der Klasse `+AbschPrio+`.
 
 [cols=4*,options="header"]
 |===
@@ -278,7 +278,7 @@ m| rMassnahme
 Ab hier folgend die neuen Stammdaten aufgrund der Änderungswünsche des Auftragnehmers:
 
 ==== Klasse `+Bauwerksbewertung+`
-Die Klasse `+Bauwerksbewertung+` führt die Bewertung des Bauwerks. Die Klasse hat keine Entsprechung im Bundesmodell. Sie ist eine kantonale Erweiterung.
+Die Klasse `+Bauwerksbewertung+` führt die Informationen über die Bewertung des Bauwerks. Die Klasse hat keine Entsprechung im Bundesmodell. Sie ist eine kantonale Erweiterung.
 
 [cols=4*,options="header"]
 |===
@@ -416,7 +416,7 @@ m| Identifikator_Bauwerk
 |===
 
 ==== Klasse `+Absturzbewertung+`
-Die Klasse `+Absturzbewertung+` führt die Bewertung der Abstürze. Die Klasse hat keine Entsprechung im Bundesmodell. Sie ist eine kantonale Erweiterung.
+Die Klasse `+Absturzbewertung+` führt die Informationen über die Bewertung des Absturzes. Die Klasse hat keine Entsprechung im Bundesmodell. Sie ist eine kantonale Erweiterung.
 
 [cols=4*,options="header"]
 |===
