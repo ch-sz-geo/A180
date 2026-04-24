@@ -2,12 +2,19 @@
 === Ziel und Zweck
 Dieses Dokument beschreibt den Geobasisdatensatz
  
-* *Planung der Revitalisierung von Fliessgewässern*
+* *Planung der Revitalisierung von Fliessgewässern (A180)*
 
-Das Thema *Planung der Revitalisierung von Fliessgewässern* ist Teil des Bundesmodells "Revitalisierung der Fliessgewässer" (ID 191). Neben der Revitalisierungsplanung umfasst der Bundesdatensatz die Ökomorphologie. Ersteres wird über einen Zeitraum von zwölf Jahren bestimmt und unterscheidet sich von der laufenden Nachführung der Ökomorphologiedaten. Aus diesem Grund wünschte die zuständige kantonale Stelle eine Trennung von den nachzuführenen Daten der Ökomorphologie und den langfristigen Daten der Revitalisierungsplanung. Dies führte zur Aufteilung in folgende kantonalen Themen:
+Das Thema *Planung der Revitalisierung von Fliessgewässern* ist Teil des Bundesdatensatzes "Revitalisierung der Fliessgewässer" (ID 191). Der Bundesdatensatz umfasst zwei Bereiche:
 
-* *Ökomorphologie der Fliessgewässer* (A026) mit laufender Nachführung und
-* *Planung der Revitalisierung von Fliessgewässern* (A180) mit statischen Daten der Zwölfjahresplanung.
+* die Ökomorphologie und
+* die Revitalisierungsplanung.
+
+Auf Stufe Kanton sind diese beiden Bereiche auf unterschiedliche Themen aufgetrennt:
+
+* *Ökomorphologie der Fliessgewässer* (A026) und
+* *Planung der Revitalisierung von Fliessgewässern* (A180).
+
+Die Auftrennung wünschte die zuständige kantonale Stelle, da die Daten zur Ökomorphologie laufend nachgeführt werden, wohingegen die Daten zur Revitalisierungsplanung alle zwölf Jahre erhoben werden und statisch bleiben.
 
 === rechtliche Grundlagen
 Seit dem 1. Juli 2008 ist das Bundesgesetz über Geoinformation (GeoIG, SR 510.62) <<allgemeines.adoc#doc-01,[1]>> in Kraft. Am 1. Juli 2012 erfolgte die vollständige Inkraftsetzung des kantonalen Geoinformationsgesetzes (kGeoiG, SRSZ 214.110) <<allgemeines.adoc#doc-03,[3]>>. Es hat zum Ziel, verbindliche Vorgaben für die Erfassung, Modellierung und den Austausch von Geodaten festzulegen.
