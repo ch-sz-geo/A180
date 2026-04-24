@@ -29,17 +29,51 @@ Die Werte von `+NutzenGIS+` und `+Nutzen+` sind identisch. Aus diesem Grund wird
 | `+BemPlau+` | `+Bemerkung_Plausibilisierung+`
 | `+Massnahme+` | `+Massnahme+`
 | `+Priorität+` | `+Prioritaet+`
-
-
-
-
-
-| `+Bemerkung+` | `+Bemerkung+`
 |===
 
+==== Klasse `+Bauwerk+`
+Die Klasse `+Bauwerk+` dient dazu, eine Hindernisgruppe zu bilden. Im Quellsystem sind die Bauwerks-Kennungen als Komma-separierte Liste geführt. Diese werden auf dieser Klasse einzeln eingetragen und über eine Beziehung der Klasse `+Bauwerksbewertung+` zugeordnet.
+[cols=2*,options="header"]
+|===
+| Quellattribut | Zielattribut
+| `+IDs_HINDERNISGRUPPE+` | `+Identifikator_Bauwerk+`
+|===
 
+==== Klasse `+Absturzbewertung+`
+Die Klasse `+Absturzbewertung+` führt die Attribute zur Bewertung eines Absturzes.
+[cols=2*,options="header"]
+|===
+| Quellattribut | Zielattribut
+| `+ID+` | `+Identifikator_Quellsystem+`
+| `+bauwerk_kennung+` | `+Identifikator_Absturz+`
+| `+typ+` | todo: kantonaler Katalog erstellen
+| `+SOHLENGEF+` | `+Sohlengefaelle+`
+| `+HVI_PRO_HINDERNISGRUPPE+` | `+Habitatsvergroesserungsindex+`
+| `+IDs_HINDERNISGRUPPE+` | über `+rGruppe+` der Klasse `+Absturz+`
+| `+FELDARBEIT+` | `+hatFeldbegehung+`
+| `+AUFWAND_KL+` | `+rBauaufwand+`
+| `+POTENZIAL_KL+` | `+rPotenzial+`
+| `+PRAEFERENZ+` | `+rPraeferenz+`
+| `+LOWHANGING_FRUIT+` | `+istNutzenoptimiert+`
+| `+BemFeldAuf+` | `+Bemerkung_Feldaufnahme+`
+| `+BemFeldRel+` | `+Bemerkung_Feldrelevanz+`
+| `+BemNutzen+` | `+Bemerkung_Nutzen+`
+| `+NutzenGIS+` | `+rGISNutzen+`
+| `+Nutzen+` | `+rGISNutzen+` +
+Die Werte von `+NutzenGIS+` und `+Nutzen+` sind identisch. Aus diesem Grund wird auf den gleichen Katalog verwiesen.
+| `+Begruend+` | `+Begruendung+`
+| `+BemPlau+` | `+Bemerkung_Plausibilisierung+`
+| `+Massnahme+` | `+Massnahme+`
+| `+Priorität+` | `+Prioritaet+`
+|===
 
-
+==== Klasse `+Absturz+`
+Die Klasse `+Absturz+` dient dazu, eine Hindernisgruppe zu bilden. Im Quellsystem sind die Absturz-Kennungen als Komma-separierte Liste geführt. Diese werden auf dieser Klasse einzeln eingetragen und über eine Beziehung der Klasse `+Absturzbewertung+` zugeordnet.
+[cols=2*,options="header"]
+|===
+| Quellattribut | Zielattribut
+| `+IDs_HINDERNISGRUPPE+` | `+Identifikator_Absturz+`
+|===
 
 === Transformation ins minimale Geodatenmodell des Bundes
 * Quellmodell: Das hier beschriebene Datenmodell
