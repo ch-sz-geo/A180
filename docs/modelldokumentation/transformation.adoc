@@ -1,7 +1,45 @@
 == Modelltransformationen
-=== [todo] Transformation vom Bearbeitungsmodell ins Publikationsmodell
-* Quellmodell: https://raw.githubusercontent.com/ch-sz-geo/A064/refs/heads/main/models/SZ_Schutzwald_V1_Bearbeitung.ili[Bearbeitungsmodell "SZ_Schutzwald_V1" (Version: 2025-01-23)]
-* Zielmodell: https://raw.githubusercontent.com/ch-sz-geo/A064/refs/heads/main/models/SZ_Schutzwald_V1.ili[Publikationsmodell verwaltungsintern "SZ_Schutzwald_V1_Bearbeitung" (Version: 2025-01-23)]
+=== Transformation vo der Struktur der Datenerfassung ins kantonale Datenmodell
+* Quellmodell: Als Input für das "Quellmodell" dient eine Excel-Liste, in welcher der Auftragnehmer Attributerweiterungen vorschlägt.
+* Zielmodell: Das hier beschriebene Datenmodell
+
+==== Klasse `+Bauwerksbewertung+`
+Die Klasse `+Bauwerksbewertung+` führt die Attribute zur Bewertung eines Bauwerks.
+[cols=2*,options="header"]
+|===
+| Quellattribut | Zielattribut
+| `+ID+` | `+Identifikator_Quellsystem+`
+| `+bauwerk_kennung+` | `+Identifikator_Bauwerk+`
+| `+typ+` | todo: kantonaler Katalog erstellen
+| `+SOHLENGEF+` | `+Sohlengefaelle+`
+| `+HVI_PRO_HINDERNISGRUPPE+` | `+Habitatsvergroesserungsindex+`
+| `+IDs_HINDERNISGRUPPE+` | über `+rGruppe+` der Klasse `+Bauwerk+`
+| `+FELDARBEIT+` | `+hatFeldbegehung+`
+| `+AUFWAND_KL+` | `+rBauaufwand+`
+| `+POTENZIAL_KL+` | `+rPotenzial+`
+| `+PRAEFERENZ+` | `+rPraeferenz+`
+| `+LOWHANGING_FRUIT+` | `+istNutzenoptimiert+`
+| `+BemFeldAuf+` | `+Bemerkung_Feldaufnahme+`
+| `+BemFeldRel+` | `+Bemerkung_Feldrelevanz+`
+| `+BemNutzen+` | `+Bemerkung_Nutzen+`
+| `+NutzenGIS+` | `+rGISNutzen+`
+| `+Nutzen+` | `+rGISNutzen+` +
+Die Werte von `+NutzenGIS+` und `+Nutzen+` sind identisch. Aus diesem Grund wird auf den gleichen Katalog verwiesen.
+| `+Begruend+` | `+Begruendung+`
+| `+BemPlau+` | `+Bemerkung_Plausibilisierung+`
+| `+Massnahme+` | `+Massnahme+`
+| `+Priorität+` | `+Prioritaet+`
+
+
+
+
+
+| `+Bemerkung+` | `+Bemerkung+`
+|===
+
+
+
+
 
 === Transformation ins minimale Geodatenmodell des Bundes
 * Quellmodell: Das hier beschriebene Datenmodell
