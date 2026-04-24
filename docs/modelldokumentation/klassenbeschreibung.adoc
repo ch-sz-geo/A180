@@ -307,7 +307,7 @@ Im Sinne unabhängiger Datenmodelle wird die lose Koppelung der Daten bevorzugt 
 m| Identifikator_Quellsystem
 | Identifikator gemäss dem Quellsystem, in welchem das Objekt erzeugt wurde.
 | 12345
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| Sohlengefaelle
 | [todo: prüfen] Gefälle der Sohle an der Stelle des Bauwerks in Promille. Berechnet aus DTM und des Gewässernetzes.
 | 8.5
@@ -315,43 +315,43 @@ m| Sohlengefaelle
 m| Habitatsvergroesserungsindex
 | [todo: prüfen] Gerechneter, indexierter Wert zur Habitatsvergrösserung
 | 750
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| hatFeldbegehung
 | Angabe, ob die Beurteilung aufgrund einer Feldbegehung erfolgte oder nicht
 | ja
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| istNutzenoptimiert
 | Angabe, ob mit geringem Aufwand ein grosser Nutzen erzielt werden kann (low hanging fruit).
 | ja
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| Bemerkung_Feldaufnahme
 | Bemerkungen zur Feldaufnnahme
 | Die Feldaufnahme erfolgte bei strahlendem Sonnenschein.
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| Bemerkung_Feldrelevanz
 | Bemerkungen zur Feldrelevanz
 | Das ist eine Bemerkung zur Feldrelevanz.
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| Bemerkung_Nutzen
 | Bemerkungen zur Einstufung des Nutzens
 | Das ist eine Bemerkung zum Nutzen der Einstufung.
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| Begruendung
 | Begründung für die Umstufung des Nutzens im Rahmen der Plausibilisierung
 | Das ist eine Begründung.
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| Bemerkung_Plausibilisierung
 | Bemerkungen zur Plausibilisierung
 | Das ist eine Bemerkung zur Plausibilisierung.
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| Massnahme
 | Festlegung möglicher Massnahmen zur Optimierung der Längsvernetzung.
 | Das ist die Beschreibung einer Massnahme.
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| [todo: Wertebereich prüfen] Prioritaet
 | Priorisierung ausgewählter Hindernisse für die anstehende Umsetzungsetappe.
 | Das ist meine Priorisierung.
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 4+| *Beziehungsattribute*
 m| rBauaufwand
 | Fremdschlüssel zum Katalog "Bauaufwand"
@@ -445,7 +445,7 @@ Im Sinne unabhängiger Datenmodelle wird die lose Koppelung der Daten bevorzugt 
 m| Identifikator_Quellsystem
 | Identifikator gemäss dem Quellsystem, in welchem das Objekt erzeugt wurde.
 | 12345
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| Sohlengefaelle
 | [todo: prüfen] Gefälle der Sohle an der Stelle des Bauwerks in Promille. Berechnet aus DTM und des Gewässernetzes.
 | 8.5
@@ -453,43 +453,43 @@ m| Sohlengefaelle
 m| Habitatsvergroesserungsindex
 | [todo: prüfen] Gerechneter, indexierter Wert zur Habitatsvergrösserung
 | 750
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| hatFeldbegehung
 | Angabe, ob die Beurteilung aufgrund einer Feldbegehung erfolgte oder nicht
 | ja
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| istNutzenoptimiert
 | Angabe, ob mit geringem Aufwand ein grosser Nutzen erzielt werden kann (low hanging fruit).
 | ja
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| Bemerkung_Feldaufnahme
 | Bemerkungen zur Feldaufnnahme
 | Die Feldaufnahme erfolgte bei strahlendem Sonnenschein.
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| Bemerkung_Feldrelevanz
 | Bemerkungen zur Feldrelevanz
 | Das ist eine Bemerkung zur Feldrelevanz.
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| Bemerkung_Nutzen
 | Bemerkungen zur Einstufung des Nutzens
 | Das ist eine Bemerkung zum Nutzen der Einstufung.
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| Begruendung
 | Begründung für die Umstufung des Nutzens im Rahmen der Plausibilisierung
 | Das ist eine Begründung.
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| Bemerkung_Plausibilisierung
 | Bemerkungen zur Plausibilisierung
 | Das ist eine Bemerkung zur Plausibilisierung.
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| Massnahme
 | Festlegung möglicher Massnahmen zur Optimierung der Längsvernetzung.
 | Das ist die Beschreibung einer Massnahme.
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| [todo: Wertebereich prüfen] Prioritaet
 | Priorisierung ausgewählter Hindernisse für die anstehende Umsetzungsetappe.
 | Das ist meine Priorisierung.
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 4+| *Beziehungsattribute*
 m| rBauaufwand
 | Fremdschlüssel zum Katalog "Bauaufwand"
