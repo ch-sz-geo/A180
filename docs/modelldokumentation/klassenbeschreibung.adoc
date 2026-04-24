@@ -299,15 +299,19 @@ m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
 | öffentlich
+m| Identifikator_Quellsystem
+| Identifikator gemäss dem Quellsystem, in welchem das Objekt erzeugt wurde.
+| 12345
+| +++<span style="color:red;">intern</span>+++
+m| Identifikator_Analysesystem
+| Identifikator gemäss dem System, welches die Analyse durchgeführt hat.
+| 12345
+| +++<span style="color:red;">intern</span>+++
 m| Identifikator_Bauwerk
 | Identifikator (OID) des Bauwerks im Modell "SZ_Oekomorphologie_Fliessgewaesser_V1_1". +
 Im Sinne unabhängiger Datenmodelle wird die lose Koppelung der Daten bevorzugt und auf die Modellierung eines Fremdschlüsselattributes verzichtet.
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
 | öffentlich
-m| Identifikator_Quellsystem
-| Identifikator gemäss dem Quellsystem, in welchem das Objekt erzeugt wurde.
-| 12345
-| +++<span style="color:red;">intern</span>+++
 m| Sohlengefaelle
 | [todo: prüfen] Gefälle der Sohle an der Stelle des Bauwerks in Promille. Berechnet aus DTM und des Gewässernetzes.
 | 8.5
@@ -437,15 +441,19 @@ m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
 | öffentlich
+m| Identifikator_Quellsystem
+| Identifikator gemäss dem Quellsystem, in welchem das Objekt erzeugt wurde.
+| 12345
+| +++<span style="color:red;">intern</span>+++
+m| Identifikator_Analysesystem
+| Identifikator gemäss dem System, welches die Analyse durchgeführt hat.
+| 12345
+| +++<span style="color:red;">intern</span>+++
 m| Identifikator_Absturz
 | Identifikator (OID) des Absturzes im Modell "SZ_Oekomorphologie_Fliessgewaesser_V1_1". +
 Im Sinne unabhängiger Datenmodelle wird die lose Koppelung der Daten bevorzugt und auf die Modellierung eines Fremdschlüsselattributes verzichtet.
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
 | öffentlich
-m| Identifikator_Quellsystem
-| Identifikator gemäss dem Quellsystem, in welchem das Objekt erzeugt wurde.
-| 12345
-| +++<span style="color:red;">intern</span>+++
 m| Sohlengefaelle
 | [todo: prüfen] Gefälle der Sohle an der Stelle des Bauwerks in Promille. Berechnet aus DTM und des Gewässernetzes.
 | 8.5
