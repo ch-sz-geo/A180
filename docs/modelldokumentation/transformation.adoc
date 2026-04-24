@@ -8,7 +8,8 @@ Die Klasse `+Bauwerksbewertung+` führt die Attribute zur Bewertung eines Bauwer
 [cols=2*,options="header"]
 |===
 | Quellattribut | Zielattribut
-| `+ID+` | `+Identifikator_Quellsystem+`
+| `+OBJECTID+` | `+Identifikator_Quellsystem+`
+| `+ID+` | `+Identifikator_Analysesystem+`
 | `+bauwerk_kennung+` | `+Identifikator_Bauwerk+`
 | `+typ+` | todo: kantonaler Katalog erstellen
 | `+SOHLENGEF+` | `+Sohlengefaelle+`
@@ -44,7 +45,8 @@ Die Klasse `+Absturzbewertung+` führt die Attribute zur Bewertung eines Absturz
 [cols=2*,options="header"]
 |===
 | Quellattribut | Zielattribut
-| `+ID+` | `+Identifikator_Quellsystem+`
+| `+OBJECTID+` | `+Identifikator_Quellsystem+`
+| `+ID+` | `+Identifikator_Analysesystem+`
 | `+bauwerk_kennung+` | `+Identifikator_Absturz+`
 | `+typ+` | todo: kantonaler Katalog erstellen
 | `+SOHLENGEF+` | `+Sohlengefaelle+`
