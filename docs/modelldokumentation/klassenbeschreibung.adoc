@@ -313,11 +313,11 @@ Im Sinne unabhängiger Datenmodelle wird die lose Koppelung der Daten bevorzugt 
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
 | öffentlich
 m| Sohlengefaelle
-| [todo: prüfen] Gefälle der Sohle an der Stelle des Bauwerks in Promille. Berechnet aus DTM und des Gewässernetzes.
+| [todo: Wertebereich prüfen] Gefälle der Sohle an der Stelle des Bauwerks in Promille. Berechnet aus DTM und des Gewässernetzes.
 | 8.5
 | öffentlich
 m| Habitatsvergroesserungsindex
-| [todo: prüfen] Gerechneter, indexierter Wert zur Habitatsvergrösserung
+| [todo: Wertebereich prüfen] Gerechneter, indexierter Wert zur Habitatsvergrösserung
 | 750
 | +++<span style="color:red;">intern</span>+++
 m| hatFeldbegehung
@@ -352,8 +352,8 @@ m| Massnahme
 | Festlegung möglicher Massnahmen zur Optimierung der Längsvernetzung.
 | Das ist die Beschreibung einer Massnahme.
 | +++<span style="color:red;">intern</span>+++
-m| [todo: Wertebereich prüfen] Prioritaet
-| Priorisierung ausgewählter Hindernisse für die anstehende Umsetzungsetappe.
+m| Prioritaet
+| [todo: Wertebereich prüfen] Priorisierung ausgewählter Hindernisse für die anstehende Umsetzungsetappe.
 | Das ist meine Priorisierung.
 | +++<span style="color:red;">intern</span>+++
 4+| *Beziehungsattribute*
@@ -494,8 +494,8 @@ m| Massnahme
 | Festlegung möglicher Massnahmen zur Optimierung der Längsvernetzung.
 | Das ist die Beschreibung einer Massnahme.
 | +++<span style="color:red;">intern</span>+++
-m| [todo: Wertebereich prüfen] Prioritaet
-| Priorisierung ausgewählter Hindernisse für die anstehende Umsetzungsetappe.
+m| Prioritaet
+| [todo: Wertebereich prüfen] Priorisierung ausgewählter Hindernisse für die anstehende Umsetzungsetappe.
 | Das ist meine Priorisierung.
 | +++<span style="color:red;">intern</span>+++
 4+| *Beziehungsattribute*
@@ -551,7 +551,7 @@ Im Sinne unabhängiger Datenmodelle wird die lose Koppelung der Daten bevorzugt 
 | öffentlich
 4+| *Beziehungsattribute*
 m| rGruppe
-| Fremdschlüssel zur Klasse "Bauwerksbewertung"
+| Fremdschlüssel zur Klasse "Absturzbewertung"
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
 | öffentlich
 4+| *Geometrie*
