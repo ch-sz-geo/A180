@@ -360,19 +360,19 @@ m| [todo: Wertebereich prüfen] Prioritaet
 m| rBauaufwand
 | Fremdschlüssel zum Katalog "Bauaufwand"
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| rPotenzial
 | Fremdschlüssel zum Katalog "Potenzial"
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| rPraeferenz
 | Fremdschlüssel zum Katalog "Praeferenz"
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| rGISNutzen
 | Fremdschlüssel zum Katalog "Nutzen"; aufgrund der identischen Werte nutzt der "GIS-Nutzen" die Einträge des Katalogs "Nutzen".
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 4+| *Geometrie*
 4+| - - -
 4+| *Bedingungen*
@@ -502,19 +502,19 @@ m| [todo: Wertebereich prüfen] Prioritaet
 m| rBauaufwand
 | Fremdschlüssel zum Katalog "Bauaufwand"
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| rPotenzial
 | Fremdschlüssel zum Katalog "Potenzial"
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| rPraeferenz
 | Fremdschlüssel zum Katalog "Praeferenz"
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 m| rGISNutzen
 | Fremdschlüssel zum Katalog "Nutzen"; aufgrund der identischen Werte nutzt der "GIS-Nutzen" die Einträge des Katalogs "Nutzen".
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
-| öffentlich
+| +++<span style="color:red;">intern</span>+++
 4+| *Geometrie*
 4+| - - -
 4+| *Bedingungen*
