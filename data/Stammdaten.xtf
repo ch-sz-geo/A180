@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ili:transfer
+  xmlns="http://www.interlis.ch/xtf/2.4/SZ_Revitalisierungsplanung_Fliessgewaesser_V2"
+  xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS"
+  xmlns:geom="http://www.interlis.ch/geometry/1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:Units="http://www.interlis.ch/xtf/2.4/Units">
+  <ili:headersection>
+    <ili:models>
+      <ili:model>SZ_Revitalisierungsplanung_Fliessgewaesser_V2</ili:model>
+    </ili:models>
+    <ili:sender>AGI SZ</ili:sender>
+  </ili:headersection>
+  <ili:datasection>
+    <Stammdaten ili:bid="ch.sz.a180.stammdaten.2026-04-15">
+      <Bauaufwand ili:tid="482a10f7-2966-4436-ad22-218a7368d09b"><Name>Realisierung einfach und günstig</Name><Code>einfach_und_guenstig</Code><SortierNr>1</SortierNr><Bemerkung></Bemerkung></Bauaufwand>
+      <Bauaufwand ili:tid="161838c7-52d4-47a0-b1d0-85a59ace1196"><Name>Realisierung erschwert und weniger günstig</Name><Code>erschwert</Code><SortierNr>2</SortierNr><Bemerkung></Bemerkung></Bauaufwand>
+      <Bauaufwand ili:tid="8f89cf3e-f0c2-4505-b1e9-0fe91cfc2133"><Name>Realisierung schwierig und teuer</Name><Code>schwierig</Code><SortierNr>3</SortierNr><Bemerkung></Bemerkung></Bauaufwand>
+      <Bauaufwand ili:tid="f0586ac9-3e2c-4779-bce6-ac99d54e113d"><Name>Realisierung kaum möglich</Name><Code>kaum_moeglich</Code><SortierNr>4</SortierNr><Bemerkung></Bemerkung></Bauaufwand>
+      <Bewertung ili:tid="d7ffe524-6a97-4b2a-973e-0d086224af2a"><Name>nicht bestimmt</Name><Code>Bewertung_1_1</Code><SortierNr>1</SortierNr><Bemerkung></Bemerkung></Bewertung>
+      <Bewertung ili:tid="2922f257-d475-48b6-b98c-ff933533258a"><Name>gering, kein</Name><Code>Bewertung_1_2</Code><SortierNr>2</SortierNr><Bemerkung></Bemerkung></Bewertung>
+      <Bewertung ili:tid="e5e3c526-f63e-4f98-8b94-1ed4edc04e7a"><Name>mittel</Name><Code>Bewertung_1_3</Code><SortierNr>3</SortierNr><Bemerkung></Bemerkung></Bewertung>
+      <Bewertung ili:tid="66c06a89-b610-4363-aaaf-88259604386a"><Name>gross</Name><Code>Bewertung_1_4</Code><SortierNr>4</SortierNr><Bemerkung></Bemerkung></Bewertung>
+      <Massnahme ili:tid="ff8fb2a9-6ca8-4c91-94b6-2f4e7615843d"><Name>Aufweitung</Name><Code>Massnahme11</Code><SortierNr>11</SortierNr><Bemerkung></Bemerkung></Massnahme>
+      <Massnahme ili:tid="eb7838d0-3bf9-4727-b23e-314a022260d7"><Name>Ausdolung</Name><Code>Massnahme12</Code><SortierNr>12</SortierNr><Bemerkung></Bemerkung></Massnahme>
+      <Massnahme ili:tid="028bd8cf-c2cc-41ef-8ae4-c1813ceef307"><Name>Beseitigung/Rückverlegung Uferverbau</Name><Code>Massnahme13</Code><SortierNr>13</SortierNr><Bemerkung></Bemerkung></Massnahme>
+      <Massnahme ili:tid="bf532637-6680-4643-ba21-bfd98fc1bee2"><Name>Lebendverbau</Name><Code>Massnahme14</Code><SortierNr>14</SortierNr><Bemerkung></Bemerkung></Massnahme>
+      <Massnahme ili:tid="bc8302a3-b462-4c31-9f79-f1a941cfc7a8"><Name>Sanierung Sohle (Geschiebe)</Name><Code>Massnahme15</Code><SortierNr>15</SortierNr><Bemerkung></Bemerkung></Massnahme>
+      <Massnahme ili:tid="068495ad-0b77-4b5a-bdda-24a6b47746dc"><Name>Strukturierung Sohle</Name><Code>Massnahme16</Code><SortierNr>16</SortierNr><Bemerkung></Bemerkung></Massnahme>
+      <Massnahme ili:tid="857dd5d9-7d9c-4b1e-8a6f-821a3ca157c1"><Name>Strömungslenker, Buhnen (artifizielle in-stream Strukturen)</Name><Code>Massnahme17</Code><SortierNr>17</SortierNr><Bemerkung></Bemerkung></Massnahme>
+      <Massnahme ili:tid="9b5edc24-1dea-4ecb-b6fa-446a776adc87"><Name>Abflachung Ufer</Name><Code>Massnahme18</Code><SortierNr>18</SortierNr><Bemerkung></Bemerkung></Massnahme>
+      <Massnahme ili:tid="a5a8ad98-ee07-4b19-b5a9-18a1a393f208"><Name>Erstellen Seitengerinne</Name><Code>Massnahme19</Code><SortierNr>19</SortierNr><Bemerkung></Bemerkung></Massnahme>
+      <Massnahme ili:tid="280769ea-f43b-4b60-bf77-ab4957f316f6"><Name>Wiederanbindung Altwasser</Name><Code>Massnahme20</Code><SortierNr>20</SortierNr><Bemerkung></Bemerkung></Massnahme>
+      <Massnahme ili:tid="e4a94083-1d8a-4522-bfe8-f81af01e73ee"><Name>Revitalisierung Mündung (See, Fliessgewässer)</Name><Code>Massnahm21</Code><SortierNr>21</SortierNr><Bemerkung></Bemerkung></Massnahme>
+      <Massnahme ili:tid="815ac9a1-f59a-4b2b-a4ea-45af19a7898f"><Name>Umverlegung Gerinne</Name><Code>Massnahme22</Code><SortierNr>22</SortierNr><Bemerkung></Bemerkung></Massnahme>
+      <Massnahme ili:tid="09327864-6b31-4c56-9522-ffc09bb21251"><Name>Remeandrierung</Name><Code>Massnahme23</Code><SortierNr>23</SortierNr><Bemerkung></Bemerkung></Massnahme>
+      <Massnahme ili:tid="a908955e-2f3b-45c9-8b19-2dcbea6b39b8"><Name>Längsvernetzung aquatisch</Name><Code>Massnahme24</Code><SortierNr>24</SortierNr><Bemerkung></Bemerkung></Massnahme>
+      <Massnahme ili:tid="6e385f53-2c7e-40ec-a949-54391cd49ed1"><Name>terrestrische Habitatvielfalt</Name><Code>Massnahme25</Code><SortierNr>25</SortierNr><Bemerkung></Bemerkung></Massnahme>
+      <Massnahme ili:tid="428aa912-a6c7-4c55-a277-2cfa46227cc5"><Name>Schaffung Überflutungsflächen</Name><Code>Massnahme26</Code><SortierNr>26</SortierNr><Bemerkung></Bemerkung></Massnahme>
+      <Massnahme ili:tid="49941ba9-4c03-4a39-b4a9-8d09cf5eb497"><Name>sonstige Massnahme</Name><Code>Massnahme27</Code><SortierNr>27</SortierNr><Bemerkung></Bemerkung></Massnahme>
+      <Massnahme ili:tid="9f848a26-791f-49d8-ad18-7ce953d53143"><Name>nicht bestimmt</Name><Code>Massnahme28</Code><SortierNr>28</SortierNr><Bemerkung></Bemerkung></Massnahme>
+      <Nutzen ili:tid="ac90a3ff-9e5b-459e-938b-47bf6efe5c4c"><Name>nicht bestimmt</Name><Code>Bewertung_2_1</Code><SortierNr>1</SortierNr><Bemerkung></Bemerkung></Nutzen>
+      <Nutzen ili:tid="3841ce22-eb5e-4162-a5fa-bccd242c98c1"><Name>gering, kein</Name><Code>Bewertung_2_2</Code><SortierNr>2</SortierNr><Bemerkung></Bemerkung></Nutzen>
+      <Nutzen ili:tid="f31e2708-b28b-4923-a74c-8d9c35f6c7b6"><Name>mittel</Name><Code>Bewertung_2_3</Code><SortierNr>3</SortierNr><Bemerkung></Bemerkung></Nutzen>
+      <Nutzen ili:tid="99bba908-9b49-4a6e-80fa-7ce679ad81e8"><Name>hoch</Name><Code>Bewertung_2_4</Code><SortierNr>4</SortierNr><Bemerkung></Bemerkung></Nutzen>
+      <Potenzial ili:tid="fcf11cc5-827f-4599-a5bb-e1ce5372765a"><Name>hoch</Name><Code>hoch</Code><SortierNr>1</SortierNr><Bemerkung></Bemerkung></Potenzial>
+      <Potenzial ili:tid="b3e0fd86-75c1-4c16-a561-61ea87fbf37d"><Name>mittel</Name><Code>mittel</Code><SortierNr>2</SortierNr><Bemerkung></Bemerkung></Potenzial>
+      <Potenzial ili:tid="c5b1f70d-5460-4d27-923c-bc718981424e"><Name>gering</Name><Code>gering</Code><SortierNr>3</SortierNr><Bemerkung></Bemerkung></Potenzial>
+      <Praeferenz ili:tid="f068d6e5-a704-4d13-a967-1c308a4b802c"><Name>1. Präferenz</Name><Code>Praeferenz_1</Code><SortierNr>1</SortierNr><Bemerkung></Bemerkung></Praeferenz>
+      <Praeferenz ili:tid="401fd000-758d-44a5-a173-c7e3f62c37d0"><Name>2. Präferenz</Name><Code>Praeferenz_2</Code><SortierNr>2</SortierNr><Bemerkung></Bemerkung></Praeferenz>
+      <Praeferenz ili:tid="51693bab-5b13-4f18-844a-762d7daa5f7c"><Name>3. Präferenz</Name><Code>Praeferenz_3</Code><SortierNr>3</SortierNr><Bemerkung></Bemerkung></Praeferenz>
+    </Stammdaten>
+  </ili:datasection>
+</ili:transfer>
