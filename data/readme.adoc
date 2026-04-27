@@ -8,7 +8,7 @@ Die folgende Tabelle fasst die relevanten Versionen der Stammdaten zusammen:
 |===
 | Dateiname | Beschreibung | Modell +
 (Version)
-| https://raw.githubusercontent.com/ch-sz-geo/A180/main/data/Stammdaten.xtf[*Stammdaten.xtf*]
+| https://raw.githubusercontent.com/ch-sz-geo/A180/Bearbeitung/data/Stammdaten.xtf[*Stammdaten.xtf*]
 | Diese Datei enthält die aktuell gültigen Stammdaten für die Datenerfassung.
 | SZ_Revitalisierungsplanung_Fliessgewaesser_V2 +
 (2026-04-15)
