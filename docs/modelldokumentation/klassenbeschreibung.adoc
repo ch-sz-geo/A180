@@ -77,7 +77,7 @@ m|Name
 Ab hier folgend die neuen Stammdaten aufgrund der Änderungswünsche des Auftragnehmers:
 
 ==== Klasse `+Bauaufwand+`
-Die Klasse `+Bauaufwand+` führt die Werte des Katalogs "Bauaufwand". Sie ist eine Spezialisierung der Klasse `+Katalogeintrag+`. Der Katalog wurde nach der ersten Längsvernetzungsanalyse auf Vorschlag des Auftragnehmers eingeführt.
+Die Klasse `+Bauaufwand+` führt die klassierten Werte des Katalogs "Bauaufwand". Sie ist eine Spezialisierung der Klasse `+Katalogeintrag+`. Der Katalog wurde nach der ersten Längsvernetzungsanalyse auf Vorschlag des Auftragnehmers eingeführt.
 
 [cols=4*,options="header"]
 |===
