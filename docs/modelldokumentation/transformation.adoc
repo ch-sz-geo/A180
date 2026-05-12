@@ -121,7 +121,8 @@ hergeleitet über `+Massnahme__Abschnittsprioritaet.rMassnahme+` | `+Massnahmen+
 | `+Bemerkung+` | `+Bemerkung+`
 |===
 
-==== Klasse `+AbsturzNutzen+`
+==== [todo] Klasse `+AbsturzNutzen+`
+Diese Klasse müsste ins Thema A180.
 Die Daten zu dieser Klasse werden im Thema A026 geführt. Die Transformationsregel finden sich https://github.com/ch-sz-geo/A026/blob/main/docs/modelldokumentation/transformation.adoc#transformation-ins-minimale-geodatenmodell-des-bundes[hier].
 
 === [todo] Transformation ins WebGIS
