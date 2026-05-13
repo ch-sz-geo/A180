@@ -593,6 +593,62 @@ m| Bemerkung
 4+| - - -
 |===
 
+=== Topic `+Metadaten+`
+Das Topic `+Metadaten+` umfasst eine Klasse, welche Informationen zu den Fachdaten führt.
+
+==== Klasse `+Bearbeitung+`
+Die Klasse `+Bearbeitung+` enthält Metadaten über den Fachdatensatz. Eine wichtige Information ist die Angabe des Referenzdatensatzes, auf welchem die Daten erhoben wurden. Die Fachdaten können nur über diesen Referenzdatensatz räumlich korrekt dargestellt werden.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+m| OID
+| technischer Objektidentifikator
+| ceaa37a9-8614-43fc-9a8b-688f95c30218
+| öffentlich
+m| erfasstVon
+| Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
+| Musterha
+| +++<span style="color:red;">intern</span>+++
+m| erfasstAm
+| Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
+| 1980-03-21T15:38:12
+| öffentlich
+m| geaendertVon
+| Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
+| Muelleran
+| +++<span style="color:red;">intern</span>+++
+m| geaendertAm
+| Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
+| 2024-07-30T08:07:57
+| öffentlich
+m| Stand
+| Datum, an dem die letzte Mutation vorgenommen wurde
+| 2026-02-17
+| öffentlich
+m| Referenzdaten
+| Bezug auf die als Grundlage genutzten Referenzdaten des Gewässernetztes. Der Wert entspricht dem "Publikationsdatum" des Datensatzes "Referenzdaten_Fliessgewässer" (siehe https://data.geo.sz.ch/public/Themen/A041b/)
+| 2022-09-14
+| öffentlich
+m| Bemerkung
+| Bemerkungen zur Bearbeitung
+| Revitalisierungsplanung abgeschlossen
+| +++<span style="color:red;">intern</span>+++
+4+| *Beziehungsattribute*
+m| rBearbeitungSingleton
+| Bezug auf sich selbst, um zu garantieren, dass nur ein einziger Eintrag in der Klasse steht (Sigleton-Muster).
+| ceaa37a9-8614-43fc-9a8b-688f95c30218
+| öffentlich
+m| rBearbeitung
+| Bezug auf sich selbst (analog zu `+rBearbeitungSingleton+`)
+| ceaa37a9-8614-43fc-9a8b-688f95c30218
+| öffentlich
+4+| *Geometrie*
+4+| - - -
+4+| *Bedingungen*
+4+| Auf der Klasse darf nur ein einziger Eintrag stehen.
+|===
+
 ifdef::backend-pdf[]
 <<<
 endif::[]
