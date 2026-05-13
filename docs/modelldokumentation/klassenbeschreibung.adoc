@@ -327,11 +327,11 @@ Im Sinne unabhängiger Datenmodelle wird die lose Koppelung der Daten bevorzugt 
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
 | öffentlich
 m| Sohlengefaelle
-| [todo: Wertebereich prüfen] Gefälle der Sohle an der Stelle des Bauwerks in Promille; berechnet aus DTM und des Gewässernetzes
+| Gefälle der Sohle an der Stelle des Bauwerks in Promille; berechnet aus DTM und des Gewässernetzes
 | 8.5
 | öffentlich
 m| Habitatsvergroesserungsindex
-| [todo: Wertebereich prüfen] gerechneter, indexierter Wert zur Habitatsvergrösserung
+| gerechneter, indexierter Wert zur Habitatsvergrösserung
 | 750
 | +++<span style="color:red;">intern</span>+++
 m| hatFeldbegehung
@@ -367,7 +367,7 @@ m| Massnahme
 | Das ist die Beschreibung einer Massnahme.
 | +++<span style="color:red;">intern</span>+++
 m| Prioritaet
-| [todo: Wertebereich prüfen] Priorisierung ausgewählter Hindernisse für die anstehende Umsetzungsetappe.
+| Priorisierung ausgewählter Hindernisse für die anstehende Umsetzungsetappe.
 | Das ist meine Priorisierung.
 | +++<span style="color:red;">intern</span>+++
 4+| *Beziehungsattribute*
@@ -480,11 +480,11 @@ Im Sinne unabhängiger Datenmodelle wird die lose Koppelung der Daten bevorzugt 
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
 | öffentlich
 m| Sohlengefaelle
-| [todo: prüfen] Gefälle der Sohle an der Stelle des Bauwerks in Promille. Berechnet aus DTM und des Gewässernetzes.
+| Gefälle der Sohle an der Stelle des Bauwerks in Promille. Berechnet aus DTM und des Gewässernetzes.
 | 8.5
 | öffentlich
 m| Habitatsvergroesserungsindex
-| [todo: prüfen] gerechneter, indexierter Wert zur Habitatsvergrösserung
+| gerechneter, indexierter Wert zur Habitatsvergrösserung
 | 750
 | +++<span style="color:red;">intern</span>+++
 m| hatFeldbegehung
@@ -520,7 +520,7 @@ m| Massnahme
 | Das ist die Beschreibung einer Massnahme.
 | +++<span style="color:red;">intern</span>+++
 m| Prioritaet
-| [todo: Wertebereich prüfen] Priorisierung ausgewählter Hindernisse für die anstehende Umsetzungsetappe.
+| Priorisierung ausgewählter Hindernisse für die anstehende Umsetzungsetappe.
 | Das ist meine Priorisierung.
 | +++<span style="color:red;">intern</span>+++
 4+| *Beziehungsattribute*
