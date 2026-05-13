@@ -14,7 +14,11 @@ Auf Stufe Kanton sind diese beiden Bereiche auf unterschiedliche Themen aufgetre
 * *Ökomorphologie der Fliessgewässer* (A026) und
 * *Planung der Revitalisierung von Fliessgewässern* (A180).
 
-Die Auftrennung wünschte die zuständige kantonale Stelle, da die Daten zur Ökomorphologie laufend nachgeführt werden, wohingegen die Daten zur Revitalisierungsplanung alle zwölf Jahre erhoben werden und statisch bleiben.
+Die nachfolgende Abbildung zeigt das Klassendiagramm des Bundesmodells. Die Zuordnung der Klassen zu den zwei kantonalen Themen ist farblich gekennzeichnet.
+
+image::../img/Klassenzuordnung.jpg[width=550]
+
+Die für den Datensatz zuständige kantonale Stelle wünscht diese Auftrennung aufgrund der unterschiedlichen Nachführungsintervallen: Die Daten zur Ökomorphologie werden laufend nachgeführt, wohingegen die Daten zur Revitalisierungsplanung alle zwölf Jahre erhoben werden und statisch bleiben.
 
 === rechtliche Grundlagen
 Seit dem 1. Juli 2008 ist das Bundesgesetz über Geoinformation (GeoIG, SR 510.62) <<allgemeines.adoc#doc-01,[1]>> in Kraft. Am 1. Juli 2012 erfolgte die vollständige Inkraftsetzung des kantonalen Geoinformationsgesetzes (kGeoiG, SRSZ 214.110) <<allgemeines.adoc#doc-03,[3]>>. Es hat zum Ziel, verbindliche Vorgaben für die Erfassung, Modellierung und den Austausch von Geodaten festzulegen.
