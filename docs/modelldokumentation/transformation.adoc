@@ -24,21 +24,16 @@ Die Klasse `+Bauwerksbewertung+` führt die Attribute zur Bewertung eines Bauwer
 | `+BemFeldRel+` | `+Bemerkung_Feldrelevanz+`
 | `+BemNutzen+` | `+Bemerkung_Nutzen+`
 | `+NutzenGIS+` | `+rGISNutzen+`
-| `+Nutzen+` | `+rGISNutzen+` +
-Die Werte von `+NutzenGIS+` und `+Nutzen+` sind identisch. Aus diesem Grund wird auf den gleichen Katalog verwiesen.
+| `+Nutzen+` | `+rNutzen+`
 | `+Begruend+` | `+Begruendung+`
 | `+BemPlau+` | `+Bemerkung_Plausibilisierung+`
 | `+Massnahme+` | `+Massnahme+`
 | `+Priorität+` | `+Prioritaet+`
+| Einzelwert aus `+IDs_HINDERNISGRUPPE+` | `+rGruppe+`
 |===
 
-==== Klasse `+Bauwerk+`
-Die Klasse `+Bauwerk+` dient dazu, eine Hindernisgruppe zu bilden. Im Quellsystem sind die Bauwerks-Kennungen als Komma-separierte Liste geführt. Diese werden auf dieser Klasse einzeln eingetragen und über eine Beziehung der Klasse `+Bauwerksbewertung+` zugeordnet.
-[cols=2*,options="header"]
-|===
-| Quellattribut | Zielattribut
-| `+IDs_HINDERNISGRUPPE+` | `+Identifikator_Bauwerk+`
-|===
+==== Klasse `+Bauwerksgruppe+`
+Die Klasse `+Bauwerksgruppe+` dient der Zusammenfassung von Bauwerken zu einer Hindernisgruppe. Im Quellsystem sind die Bauwerkskennungen als Komma-separierte Liste geführt. Bei der Überführung ins kantonale Modell wird eine Bauwerksgruppe erstellt. Die Gruppenzuordnung erfolgt über das Attribut `+rGruppe+` der Klasse `+Bauwerksbewertung+`.
 
 ==== Klasse `+Absturzbewertung+`
 Die Klasse `+Absturzbewertung+` führt die Attribute zur Bewertung eines Absturzes.
@@ -67,15 +62,11 @@ Die Werte von `+NutzenGIS+` und `+Nutzen+` sind identisch. Aus diesem Grund wird
 | `+BemPlau+` | `+Bemerkung_Plausibilisierung+`
 | `+Massnahme+` | `+Massnahme+`
 | `+Priorität+` | `+Prioritaet+`
+| Einzelwert aus `+IDs_HINDERNISGRUPPE+` | `+rGruppe+`
 |===
 
-==== Klasse `+Absturz+`
-Die Klasse `+Absturz+` dient dazu, eine Hindernisgruppe zu bilden. Im Quellsystem sind die Absturz-Kennungen als Komma-separierte Liste geführt. Diese werden auf dieser Klasse einzeln eingetragen und über eine Beziehung der Klasse `+Absturzbewertung+` zugeordnet.
-[cols=2*,options="header"]
-|===
-| Quellattribut | Zielattribut
-| `+IDs_HINDERNISGRUPPE+` | `+Identifikator_Absturz+`
-|===
+==== Klasse `+Absturzgruppe+`
+Die Klasse `+Absturzgruppe+` dient der Zusammenfassung von Abstürzen zu einer Hindernisgruppe. Im Quellsystem sind die Absturzkennungen als Komma-separierte Liste geführt. Bei der Überführung ins kantonale Modell wird eine Absturzgruppe erstellt. Die Gruppenzuordnung erfolgt über das Attribut `+rGruppe+` der Klasse `+Absturzbewertung+`.
 
 === Transformation ins minimale Geodatenmodell des Bundes
 * Quellmodell: Das hier beschriebene Datenmodell
@@ -121,28 +112,23 @@ hergeleitet über `+Massnahme__Abschnittsprioritaet.rMassnahme+` | `+Massnahmen+
 | `+Bemerkung+` | `+Bemerkung+`
 |===
 
-==== [todo] Klasse `+AbsturzNutzen+`
-Diese Klasse müsste ins Thema A180.
-Die Daten zu dieser Klasse werden im Thema A026 geführt. Die Transformationsregel finden sich https://github.com/ch-sz-geo/A026/blob/main/docs/modelldokumentation/transformation.adoc#transformation-ins-minimale-geodatenmodell-des-bundes[hier].
-
-=== [todo] Transformation ins WebGIS
-* Quellmodell: Das hier beschriebene Datenmodell
-* Zielmodell: keines (siehe unten)
-
-==== Allgemeines
-Für die WebGIS-Publikation werden die Daten optimiert. Dies ist häufig mit einer Denormalisierung verbunden ("flachwalzen" der Daten). Der Attributumfang richtet sich nach den Anforderungen der zuständigen Stelle und ist im Normalfall geringer als im Ausgangsmodell. Eine weitere Besonderheit kommt den Tabellen der WebGIS-Datenbank zu. Sie weisen Standard-Spalten auf, welche nicht Teil des Datenmodells sind. Es handelt sich um folgende Spalten:
-
-**Standardspalten:**
+==== Klasse `+BauwerkNutzen+`
 [cols=2*,options="header"]
 |===
-| Spaltenname | Beschreibung
-m| id | eindeutige Identifikation des Objektes; kann von der OID der Ausgangsdaten abweichen, falls Objekte zum Zweck der Publikation aufgeteilt werden müssen
-m| etl_dt | Zeitstempel, an dem der Datensatz in die Tabelle geschrieben wurde (etl: extract - transfer - load)
-m| etl_job | Name des Jobs, mit dem die Daten auf die Tabelle geschrieben wurde
-m| asof_dt | Datum, an dem am Datensatz die letzten Änderungen vorgenommen wurden. Dieser Wert wird in den Metadaten des Datensatzes nachgeführt.
+| Quellattribut | Zielattribut
+|  Wert von `+Nutzen.OID+` +
+hergeleitet über `+Nutzen__Bauwerksbewertung.rNutzen+` | `+Nutzen+`
+| `+Bauwerksbewertung.Bemerkung_Nutzen+` | `+Bemerkung+`
 |===
 
-Das WebGIS bezieht die Daten direkt aus der Datenbank. Aus diesem Grund wird nachfolgend von "Tabelle" und "Spalte" anstelle von "Klasse" und "Attribut" gesprochen. Der Klassenname erscheint lediglich in der Überschrift.
+==== Klasse `+AbsturzNutzen+`
+[cols=2*,options="header"]
+|===
+| Quellattribut | Zielattribut
+|  Wert von `+Nutzen.OID+` +
+hergeleitet über `+Nutzen__Absturzbewertung.rNutzen+` | `+Nutzen+`
+| `+Absturzbewertung.Bemerkung_Nutzen+` | `+Bemerkung+`
+|===
 
 ifdef::backend-pdf[]
 <<<
