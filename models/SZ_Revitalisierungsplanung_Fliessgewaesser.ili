@@ -128,19 +128,19 @@ MODEL SZ_Revitalisierungsplanung_Fliessgewaesser_V2 (de)
       Bemerkung_Feldaufnahme        :             MTEXT*1000;
       Bemerkung_Feldrelevanz        :             MTEXT*1000;
       Bemerkung_Nutzen              :             MTEXT*1000;
-      Begruendung                   :             MTEXT*1000;
       Bemerkung_Plausibilisierung   :             MTEXT*1000;
+      Begruendung                   :             MTEXT*1000;
       Massnahme                     :             MTEXT*1000;
       Prioritaet                    :             MTEXT*1000;
    END Bauwerksbewertung;
 
-    CLASS Bauwerk =
-      erfasstVon             :  MANDATORY  TEXT*100;
-      erfasstAm              :  MANDATORY  XMLDateTime;
-      geaendertVon           :  MANDATORY  TEXT*100;
-      geaendertAm            :  MANDATORY  XMLDateTime;
-      Identifikator_Bauwerk  :  MANDATORY  UUIDOID;
-   END Bauwerk;
+    CLASS Bauwerksgruppe =
+      erfasstVon    :  MANDATORY  TEXT*100;
+      erfasstAm     :  MANDATORY  XMLDateTime;
+      geaendertVon  :  MANDATORY  TEXT*100;
+      geaendertAm   :  MANDATORY  XMLDateTime;
+      Bemerkung     :             MTEXT*1000;
+   END Bauwerksgruppe;
 
     CLASS Absturzbewertung =
       erfasstVon                    :  MANDATORY  TEXT*100;
@@ -157,19 +157,19 @@ MODEL SZ_Revitalisierungsplanung_Fliessgewaesser_V2 (de)
       Bemerkung_Feldaufnahme        :             MTEXT*1000;
       Bemerkung_Feldrelevanz        :             MTEXT*1000;
       Bemerkung_Nutzen              :             MTEXT*1000;
-      Begruendung                   :             MTEXT*1000;
       Bemerkung_Plausibilisierung   :             MTEXT*1000;
+      Begruendung                   :             MTEXT*1000;
       Massnahme                     :             MTEXT*1000;
       Prioritaet                    :             MTEXT*1000;
    END Absturzbewertung;
 
-    CLASS Absturz =
-      erfasstVon             :  MANDATORY  TEXT*100;
-      erfasstAm              :  MANDATORY  XMLDateTime;
-      geaendertVon           :  MANDATORY  TEXT*100;
-      geaendertAm            :  MANDATORY  XMLDateTime;
-      Identifikator_Absturz  :  MANDATORY  UUIDOID;
-   END Absturz;
+    CLASS Absturzgruppe =
+      erfasstVon    :  MANDATORY  TEXT*100;
+      erfasstAm     :  MANDATORY  XMLDateTime;
+      geaendertVon  :  MANDATORY  TEXT*100;
+      geaendertAm   :  MANDATORY  XMLDateTime;
+      Bemerkung     :             MTEXT*1000;
+   END Absturzgruppe;
 
     ASSOCIATION Bewertung__Abschnittsbewertung =
       rBewertung (EXTERNAL)  --  {1}     SZ_Revitalisierungsplanung_Fliessgewaesser_V2.Stammdaten.Bewertung;
@@ -186,10 +186,10 @@ MODEL SZ_Revitalisierungsplanung_Fliessgewaesser_V2 (de)
       rAbschnittsprioritaet  --  {0..*}  Abschnittsprioritaet;
     END Massnahme__Abschnittsprioritaet;
 
-    ASSOCIATION Bauwerksbewertung__Bauwerk =
-      rGruppe   --  {1}     Bauwerksbewertung;
-      rBauwerk  --  {0..*}  Bauwerk;
-    END Bauwerksbewertung__Bauwerk;
+    ASSOCIATION Bauwerksgruppe__Bauwerksbewertung =
+      rGruppe   --  {1}     Bauwerksgruppe;
+      rBauwerk  --  {0..*}  Bauwerksbewertung;
+    END Bauwerksgruppe__Bauwerksbewertung;
 
     ASSOCIATION Bauaufwand__Bauwerksbewertung =
       rBauaufwand (EXTERNAL)  --  {1}     SZ_Revitalisierungsplanung_Fliessgewaesser_V2.Stammdaten.Bauaufwand;
@@ -206,15 +206,20 @@ MODEL SZ_Revitalisierungsplanung_Fliessgewaesser_V2 (de)
       rBauwerksbewertung      --  {0..*}  Bauwerksbewertung;
     END Praeferenz__Bauwerksbewertung;
 
+    ASSOCIATION GISNutzen__Bauwerksbewertung =
+      rGISNutzen (EXTERNAL)  --  {1}     SZ_Revitalisierungsplanung_Fliessgewaesser_V2.Stammdaten.Bewertung;
+      rBauwerksbewertung     --  {0..*}  Bauwerksbewertung;
+    END GISNutzen__Bauwerksbewertung;
+
     ASSOCIATION Nutzen__Bauwerksbewertung =
-      rGISNutzen (EXTERNAL)  --  {1}     SZ_Revitalisierungsplanung_Fliessgewaesser_V2.Stammdaten.Nutzen;
-      rBauwerksbewertung      --  {0..*}  Bauwerksbewertung;
+      rNutzen (EXTERNAL)  --  {1}     SZ_Revitalisierungsplanung_Fliessgewaesser_V2.Stammdaten.Nutzen;
+      rBauwerksbewertung  --  {0..*}  Bauwerksbewertung;
     END Nutzen__Bauwerksbewertung;
 
-    ASSOCIATION Absturzbewertung__Absturz =
-      rGruppe   --  {1}     Absturzbewertung;
-      rAbsturz  --  {0..*}  Absturz;
-    END Absturzbewertung__Absturz;
+    ASSOCIATION Absturzgruppe__Absturzbewertung =
+      rGruppe   --  {1}     Absturzgruppe;
+      rAbsturz  --  {0..*}  Absturzbewertung;
+    END Absturzgruppe__Absturzbewertung;
 
     ASSOCIATION Bauaufwand__Absturzbewertung =
       rBauaufwand (EXTERNAL)  --  {1}     SZ_Revitalisierungsplanung_Fliessgewaesser_V2.Stammdaten.Bauaufwand;
@@ -231,9 +236,14 @@ MODEL SZ_Revitalisierungsplanung_Fliessgewaesser_V2 (de)
       rBauwerksbewertung      --  {0..*}  Absturzbewertung;
     END Praeferenz__Absturzbewertung;
 
-    ASSOCIATION Nutzen__Absturzbewertung =
-      rGISNutzen (EXTERNAL)  --  {1}     SZ_Revitalisierungsplanung_Fliessgewaesser_V2.Stammdaten.Nutzen;
+    ASSOCIATION GISNutzen__Absturzbewertung =
+      rGISNutzen (EXTERNAL)  --  {1}     SZ_Revitalisierungsplanung_Fliessgewaesser_V2.Stammdaten.Bewertung;
       rAbsturzbewertung      --  {0..*}  Absturzbewertung;
+    END GISNutzen__Absturzbewertung;
+
+    ASSOCIATION Nutzen__Absturzbewertung =
+      rNutzen (EXTERNAL)  --  {1}     SZ_Revitalisierungsplanung_Fliessgewaesser_V2.Stammdaten.Nutzen;
+      rAbsturzbewertung   --  {0..*}  Absturzbewertung;
     END Nutzen__Absturzbewertung;
 
   END Fachdaten;
@@ -248,12 +258,12 @@ MODEL SZ_Revitalisierungsplanung_Fliessgewaesser_V2 (de)
       erfasstAm      :  MANDATORY  XMLDateTime;
       geaendertVon   :  MANDATORY  TEXT*100;
       geaendertAm    :  MANDATORY  XMLDateTime;
-      Stand          :  MANDATORY  XMLDate;     !! Datum, an dem die letzte Mutation vorgenommen wurde
-      Referenzdaten  :  MANDATORY  XMLDate;     !! Bezug auf die als Grundlage genutzten Referenzdaten des Gewässernetztes. Der Wert entspricht dem "Publikationsdatum" des Datensatzes "Referenzdaten_Fliessgewässer" (siehe https://data.geo.sz.ch/public/Themen/A041b/)
-      Bemerkung      :             MTEXT*1000;  !! Bemerkung zur Bearbeitung
+      Stand          :  MANDATORY  XMLDate;
+      Referenzdaten  :  MANDATORY  XMLDate;
+      Bemerkung      :             MTEXT*1000;
     END Bearbeitung;
 
-    ASSOCIATION Bearbeitung__Bearbeitung =  !! Diese Beziehung dient der Umsetzung des Singleton-Patterns. Damit wird garantiert, dass die Klasse "Bearbeitung" genau ein einziges Objekt enthält.
+    ASSOCIATION Bearbeitung__Bearbeitung =
       rBearbeitungSingleton   -<#>  {1}  Bearbeitung;
       rBearbeitung            --    {1}  Bearbeitung;
     END Bearbeitung__Bearbeitung;
