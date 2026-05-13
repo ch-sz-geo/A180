@@ -1,7 +1,7 @@
 INTERLIS 2.4;
 !!==============================================================================
 !!@ Title               = "Planung der Revitalisierungen von Gewässern (Bereich Fliessgewässer)";
-!!@ shortDescription    = "Dieses Modell führt die Klassen der Revitalisierungsplanung von Fliessgewässern. Es orientiert sich an dem Bundesmodell und erweitert dieses punktuell. Die im Bundesmodell enthaltenen Klassen zur Ökomorphologie im Thema A026 behandelt.";
+!!@ shortDescription    = "Dieses Modell führt die Klassen der Revitalisierungsplanung von Fliessgewässern. Es orientiert sich an dem Bundesmodell und erweitert dieses punktuell. Die im Bundesmodell enthaltenen Klassen zur Ökomorphologie werden im Thema A026 behandelt.";
 !!@ technicalContact    = "mailto:geoportal@sz.ch";
 !!@ furtherInformation  = "https://ch-sz-geo.github.io/A180/docs/modelldokumentation.html";
 !!@ Themennummer        = "A180";
