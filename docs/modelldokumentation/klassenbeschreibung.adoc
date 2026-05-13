@@ -33,7 +33,7 @@ m| Bemerkung
 |===
 
 ==== Klasse `+Bewertung+`
-Die Klasse `+Bewertung+` führt die Werte des Katalogs "Bewertung". Sie ist eine Spezialisierung der Klasse `+Katalogeintrag+`.
+Die Klasse `+Bewertung+` führt die Werte des Katalogs "Bewertung" (Bundeskatalog: "BewertungRef_1"). Sie ist eine Spezialisierung der Klasse `+Katalogeintrag+`.
 
 [cols=4*,options="header"]
 |===
@@ -47,7 +47,7 @@ m|Name
 |===
 
 ==== Klasse `+Nutzen+`
-Die Klasse `+Nutzen+` führt die Werte des Katalogs "Nutzen". Sie ist eine Spezialisierung der Klasse `+Katalogeintrag+`.
+Die Klasse `+Nutzen+` führt die Werte des Katalogs "Nutzen" (Bundeskatalog: "BewertungRef_2"). Sie ist eine Spezialisierung der Klasse `+Katalogeintrag+`.
 
 [cols=4*,options="header"]
 |===
@@ -61,7 +61,7 @@ m|Name
 |===
 
 ==== Klasse `+Massnahme+`
-Die Klasse `+Massnahme+` führt die Werte des Katalogs "Massnahme". Sie ist eine Spezialisierung der Klasse `+Katalogeintrag+`.
+Die Klasse `+Massnahme+` führt die Werte des Katalogs "Massnahme"  (Bundeskatalog: "MassnahmeRef"). Sie ist eine Spezialisierung der Klasse `+Katalogeintrag+`.
 
 [cols=4*,options="header"]
 |===
@@ -77,7 +77,7 @@ m|Name
 Ab hier folgend die neuen Stammdaten aufgrund der Änderungswünsche des Auftragnehmers:
 
 ==== Klasse `+Bauaufwand+`
-Die Klasse `+Bauaufwand+` führt die klassierten Werte des Katalogs "Bauaufwand". Sie ist eine Spezialisierung der Klasse `+Katalogeintrag+`. Der Katalog wurde nach der ersten Längsvernetzungsanalyse auf Vorschlag des Auftragnehmers eingeführt.
+Die Klasse `+Bauaufwand+` führt die klassierten Werte des Katalogs "Bauaufwand". Sie ist eine Spezialisierung der Klasse `+Katalogeintrag+`. Der Katalog wurde nach der ersten Längsvernetzungsanalyse auf Vorschlag des Auftragnehmers eingeführt und ist eine kantonale Erweiterung.
 
 [cols=4*,options="header"]
 |===
@@ -91,7 +91,7 @@ m|Name
 |===
 
 ==== Klasse `+Potenzial+`
-Die Klasse `+Potenzial+` führt die klassierten Werte des Katalogs "ökologisches Potenzial". Sie ist eine Spezialisierung der Klasse `+Katalogeintrag+`. Der Katalog wurde nach der ersten Längsvernetzungsanalyse auf Vorschlag des Auftragnehmers eingeführt.
+Die Klasse `+Potenzial+` führt die klassierten Werte des Katalogs "ökologisches Potenzial". Sie ist eine Spezialisierung der Klasse `+Katalogeintrag+`. Der Katalog wurde nach der ersten Längsvernetzungsanalyse auf Vorschlag des Auftragnehmers eingeführt und ist eine kantonale Erweiterung.
 
 [cols=4*,options="header"]
 |===
@@ -105,7 +105,7 @@ m|Name
 |===
 
 ==== Klasse `+Praeferenz+`
-Die Klasse `+Praeferenz+` führt die Werte des Katalogs "Praeferenz". Sie ist eine Spezialisierung der Klasse `+Katalogeintrag+`. Der Katalog wurde nach der ersten Längsvernetzungsanalyse auf Vorschlag des Auftragnehmers eingeführt.
+Die Klasse `+Praeferenz+` führt die Werte des Katalogs "Praeferenz". Sie ist eine Spezialisierung der Klasse `+Katalogeintrag+`. Der Katalog wurde nach der ersten Längsvernetzungsanalyse auf Vorschlag des Auftragnehmers eingeführt und ist eine kantonale Erweiterung.
 
 [cols=4*,options="header"]
 |===
@@ -127,6 +127,10 @@ Die Klasse `+Abschnittsbewertung+` führt die Informationen über die Bewertung 
 [cols=4*,options="header"]
 |===
 | Name | Beschreibung | Beispiel | Freigabe
+m| OID
+| technischer Objektidentifikator
+| ceaa37a9-8614-43fc-9a8b-688f95c30218
+| öffentlich
 m| erfasstVon
 | Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
 | Musterha
@@ -177,6 +181,10 @@ Die Klasse `+Abschnittsnutzen+` führt die Informationen über die Bewertung des
 [cols=4*,options="header"]
 |===
 | Name | Beschreibung | Beispiel | Freigabe
+m| OID
+| technischer Objektidentifikator
+| ceaa37a9-8614-43fc-9a8b-688f95c30218
+| öffentlich
 m| erfasstVon
 | Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
 | Musterha
@@ -227,6 +235,10 @@ Die Klasse `+Abschnittsprioritaet+` führt die Informationen zur Priorisierung e
 [cols=4*,options="header"]
 |===
 | Name | Beschreibung | Beispiel | Freigabe
+m| OID
+| technischer Objektidentifikator
+| ceaa37a9-8614-43fc-9a8b-688f95c30218
+| öffentlich
 m| erfasstVon
 | Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
 | Musterha
@@ -275,14 +287,16 @@ m| rMassnahme
 3+| `+LinearpositionVon+` < `+LinearpositionBis+`
 |===
 
-Ab hier folgend die neuen Stammdaten aufgrund der Änderungswünsche des Auftragnehmers:
-
 ==== Klasse `+Bauwerksbewertung+`
-Die Klasse `+Bauwerksbewertung+` führt die Informationen über die Bewertung des Bauwerks. Die Klasse hat keine Entsprechung im Bundesmodell. Sie ist eine kantonale Erweiterung.
+Die Klasse `+Bauwerksbewertung+` führt die Informationen über die Bewertung des Bauwerks. Im Bundesmodell entspricht dies der Klasse `+BauwerkNutzen+`. Da die Klasse auf Stufe Kanton erweitert wurde und die Informationen zum Nutzen nur ein Aspekt bilden, erhielt die Klasse einen sprechenderen Namen.
 
 [cols=4*,options="header"]
 |===
 | Name | Beschreibung | Beispiel | Freigabe
+m| OID
+| technischer Objektidentifikator
+| ceaa37a9-8614-43fc-9a8b-688f95c30218
+| öffentlich
 m| erfasstVon
 | Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
 | Musterha
@@ -339,14 +353,14 @@ m| Bemerkung_Feldrelevanz
 m| Bemerkung_Nutzen
 | Bemerkungen zur Einstufung des Nutzens
 | Das ist eine Bemerkung zum Nutzen der Einstufung.
+| öffentlich (gemäss Bundesmodell)
+m| Bemerkung_Plausibilisierung
+| Bemerkungen zur Plausibilisierung
+| Das ist eine Bemerkung zur Plausibilisierung.
 | +++<span style="color:red;">intern</span>+++
 m| Begruendung
 | Begründung für die Umstufung des Nutzens im Rahmen der Plausibilisierung
 | Das ist eine Begründung.
-| +++<span style="color:red;">intern</span>+++
-m| Bemerkung_Plausibilisierung
-| Bemerkungen zur Plausibilisierung
-| Das ist eine Bemerkung zur Plausibilisierung.
 | +++<span style="color:red;">intern</span>+++
 m| Massnahme
 | Festlegung möglicher Massnahmen zur Optimierung der Längsvernetzung.
@@ -357,6 +371,10 @@ m| Prioritaet
 | Das ist meine Priorisierung.
 | +++<span style="color:red;">intern</span>+++
 4+| *Beziehungsattribute*
+m| rGruppe
+| Fremdschlüssel zur Klasse "Bauwerksgruppe"
+| ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
+| +++<span style="color:red;">intern</span>+++
 m| rBauaufwand
 | Fremdschlüssel zum Katalog "Bauaufwand"
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
@@ -370,9 +388,13 @@ m| rPraeferenz
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
 | +++<span style="color:red;">intern</span>+++
 m| rGISNutzen
-| Fremdschlüssel zum Katalog "Nutzen"; aufgrund der identischen Werte nutzt der "GIS-Nutzen" die Einträge des Katalogs "Nutzen".
+| Fremdschlüssel zum Katalog "Bewertung"
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
 | +++<span style="color:red;">intern</span>+++
+m| rNutzen
+| Fremdschlüssel zum Katalog "Nutzen"
+| ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
+| öffentlich (gemäss Bundesmodell)
 4+| *Geometrie*
 4+| - - -
 4+| *Bedingungen*
@@ -380,12 +402,16 @@ m| Identifikator_Bauwerk
 3+| Der Wert muss mit einer OID der Klasse `+SZ_Oekomorphologie_Fliessgewaesser_V1_1.Oekomorphologie.Bauwerk+` übereinstimmen.
 |===
 
-==== Klasse `+Bauwerk+`
-Die Klasse `+Bauwerk+` führt die Identifikatoren (OID) jener Bauwerke, welche zu einer Hindernisgruppe zusammengefasst werden. Die Klasse hat keine Entsprechung im Bundesmodell. Sie ist eine kantonale Erweiterung.
+==== Klasse `+Bauwerksgruppe+`
+Die Klasse `+Bauwerksgruppe+` dient der Gruppierung von Bauwerken, welche zusammen eine Hindernisgruppe bilden. Die Klasse hat keine Entsprechung im Bundesmodell. Sie ist eine kantonale Erweiterung.
 
 [cols=4*,options="header"]
 |===
 | Name | Beschreibung | Beispiel | Freigabe
+m| OID
+| technischer Objektidentifikator
+| ceaa37a9-8614-43fc-9a8b-688f95c30218
+| öffentlich
 m| erfasstVon
 | Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
 | Musterha
@@ -402,29 +428,28 @@ m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
 | öffentlich
-m| Identifikator_Bauwerk
-| Identifikator (OID) des Bauwerks im Modell "SZ_Oekomorphologie_Fliessgewaesser_V1_1". +
-Im Sinne unabhängiger Datenmodelle wird die lose Koppelung der Daten bevorzugt und auf die Modellierung eines Fremdschlüsselattributes verzichtet.
-| ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
-| öffentlich
+m| Bemerkung
+| Bemerkungen zur Bauwerksgruppe
+| Bauwerke oberhalb der Strasse
+| +++<span style="color:red;">intern</span>+++
 4+| *Beziehungsattribute*
-m| rGruppe
-| Fremdschlüssel zur Klasse "Bauwerksbewertung"
-| ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
-| öffentlich
+4+| - - -
 4+| *Geometrie*
 4+| - - -
 4+| *Bedingungen*
-m| Identifikator_Bauwerk
-3+| Der Wert muss mit einer OID der Klasse `+SZ_Oekomorphologie_Fliessgewaesser_V1_1.Oekomorphologie.Bauwerk+` übereinstimmen.
+4+| - - -
 |===
 
 ==== Klasse `+Absturzbewertung+`
-Die Klasse `+Absturzbewertung+` führt die Informationen über die Bewertung des Absturzes. Die Klasse hat keine Entsprechung im Bundesmodell. Sie ist eine kantonale Erweiterung.
+Die Klasse `+Absturzbewertung+` führt die Informationen über die Bewertung des Absturzes. Im Bundesmodell entspricht dies der Klasse `+AbsturzNutzen+`. Da die Klasse auf Stufe Kanton erweitert wurde und die Informationen zum Nutzen nur ein Aspekt bilden, erhielt die Klasse einen sprechenderen Namen.
 
 [cols=4*,options="header"]
 |===
 | Name | Beschreibung | Beispiel | Freigabe
+m| OID
+| technischer Objektidentifikator
+| ceaa37a9-8614-43fc-9a8b-688f95c30218
+| öffentlich
 m| erfasstVon
 | Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
 | Musterha
@@ -481,14 +506,14 @@ m| Bemerkung_Feldrelevanz
 m| Bemerkung_Nutzen
 | Bemerkungen zur Einstufung des Nutzens
 | Das ist eine Bemerkung zum Nutzen der Einstufung.
+| öffentlich (gemäss Bundesmodell)
+m| Bemerkung_Plausibilisierung
+| Bemerkungen zur Plausibilisierung
+| Das ist eine Bemerkung zur Plausibilisierung.
 | +++<span style="color:red;">intern</span>+++
 m| Begruendung
 | Begründung für die Umstufung des Nutzens im Rahmen der Plausibilisierung
 | Das ist eine Begründung.
-| +++<span style="color:red;">intern</span>+++
-m| Bemerkung_Plausibilisierung
-| Bemerkungen zur Plausibilisierung
-| Das ist eine Bemerkung zur Plausibilisierung.
 | +++<span style="color:red;">intern</span>+++
 m| Massnahme
 | Festlegung möglicher Massnahmen zur Optimierung der Längsvernetzung.
@@ -499,6 +524,10 @@ m| Prioritaet
 | Das ist meine Priorisierung.
 | +++<span style="color:red;">intern</span>+++
 4+| *Beziehungsattribute*
+m| rGruppe
+| Fremdschlüssel zur Klasse "Absturzgruppe"
+| ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
+| +++<span style="color:red;">intern</span>+++
 m| rBauaufwand
 | Fremdschlüssel zum Katalog "Bauaufwand"
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
@@ -512,9 +541,13 @@ m| rPraeferenz
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
 | +++<span style="color:red;">intern</span>+++
 m| rGISNutzen
-| Fremdschlüssel zum Katalog "Nutzen"; aufgrund der identischen Werte nutzt der "GIS-Nutzen" die Einträge des Katalogs "Nutzen".
+| Fremdschlüssel zum Katalog "Bewertung"
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
 | +++<span style="color:red;">intern</span>+++
+m| rNutzen
+| Fremdschlüssel zum Katalog "Nutzen"
+| ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
+| öffentlich (gemäss Bundesmodell)
 4+| *Geometrie*
 4+| - - -
 4+| *Bedingungen*
@@ -522,12 +555,16 @@ m| Identifikator_Absturz
 3+| Der Wert muss mit einer OID der Klasse `+SZ_Oekomorphologie_Fliessgewaesser_V1_1.Oekomorphologie.Absturz+` übereinstimmen.
 |===
 
-==== Klasse `+Absturz+`
-Die Klasse `+Absturz+` führt die Identifikatoren (OID) jener Abstürze, welche zu einer Hindernisgruppe zusammengefasst werden. Die Klasse hat keine Entsprechung im Bundesmodell. Sie ist eine kantonale Erweiterung.
+==== Klasse `+Absturzgruppe+`
+Die Klasse `+Absturzgruppe+` dient der Gruppierung von Abstürzen, welche zusammen eine Hindernisgruppe bilden. Die Klasse hat keine Entsprechung im Bundesmodell. Sie ist eine kantonale Erweiterung.
 
 [cols=4*,options="header"]
 |===
 | Name | Beschreibung | Beispiel | Freigabe
+m| OID
+| technischer Objektidentifikator
+| ceaa37a9-8614-43fc-9a8b-688f95c30218
+| öffentlich
 m| erfasstVon
 | Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
 | Musterha
@@ -544,21 +581,16 @@ m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
 | öffentlich
-m| Identifikator_Absturz
-| Identifikator (OID) des Absturzes im Modell "SZ_Oekomorphologie_Fliessgewaesser_V1_1". +
-Im Sinne unabhängiger Datenmodelle wird die lose Koppelung der Daten bevorzugt und auf die Modellierung eines Fremdschlüsselattributes verzichtet.
-| ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
-| öffentlich
+m| Bemerkung
+| Bemerkungen zur Absturzgruppe
+| Abstürze oberhalb der Strasse
+| +++<span style="color:red;">intern</span>+++
 4+| *Beziehungsattribute*
-m| rGruppe
-| Fremdschlüssel zur Klasse "Absturzbewertung"
-| ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
-| öffentlich
+4+| - - -
 4+| *Geometrie*
 4+| - - -
 4+| *Bedingungen*
-m| Identifikator_Absturz
-3+| Der Wert muss mit einer OID der Klasse `+SZ_Oekomorphologie_Fliessgewaesser_V1_1.Oekomorphologie.Absturz+` übereinstimmen.
+4+| - - -
 |===
 
 ifdef::backend-pdf[]
