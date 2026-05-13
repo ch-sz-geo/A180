@@ -5,7 +5,7 @@ INTERLIS 2.4;
 !!@ technicalContact    = "mailto:geoportal@sz.ch";
 !!@ furtherInformation  = "https://ch-sz-geo.github.io/A180/docs/modelldokumentation.html";
 !!@ Themennummer        = "A180";
-!!@ iliCompilerVersion  = "ili2c-5.6.7-d72067b5afa50db9409d1c10d99110fbc8bcca20";
+!!@ iliCompilerVersion  = "ili2c-5.6.8-e6f7ab6dd5cdba29afc9b24866ecb98c057d82b2";
 !!------------------------------------------------------------------------------
 !!      Version     | wer | was
 !! Datum      | Nr  |     |
