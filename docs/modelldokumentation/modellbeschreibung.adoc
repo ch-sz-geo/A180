@@ -7,7 +7,7 @@ Was die Verortung der Objekte betrifft, stellt das Bundesmodell zwei Varianten z
 * den linearen Raumbezug und
 * den planaren Raumbezug.
 
-Im kantonalen Modell werden alle Objekte linear entlang des Fliessgewässers referenziert. Auf die Angabe einer Geometrie wird verzichtet. Eine Umwandlung vom linearen zum planaren System erfolgt erst bei der Überführung ins Bundesmodell.
+Im kantonalen Modell werden alle Objekte linear, entlang des Fliessgewässers, referenziert. Auf die Angabe einer Geometrie wird verzichtet. Eine Umwandlung vom linearen zum planaren System erfolgt erst bei der Überführung ins Bundesmodell.
 
 ifdef::backend-pdf[]
 <<<
