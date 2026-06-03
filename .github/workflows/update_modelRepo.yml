@@ -6,8 +6,36 @@ on:
     paths:
       - 'models/**'
 
+
 jobs:
+  validate-iliModels:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }} # checks out the branch that triggered the action (PR source)
+          
+      - name: Set up JDK 25
+        uses: actions/setup-java@v4
+        with:
+          java-version: '25'
+          distribution: 'adopt'
+      - name: ili2cInstalation
+        uses: ch-sz-geo/interlis-setup-action/setup-iliCompiler@v1
+        with:
+          path: ../ili2c
+      - name: verify java Version
+        run: java --version
+      - name: Validate the Interlis Models
+        run: |
+          for file in models/*; do
+            java -jar ../ili2c/ili2c.jar "$file"
+          done
+
   detect-changes:
+    needs: validate-iliModels
     runs-on: ubuntu-latest
 
     steps:
@@ -23,7 +51,7 @@ jobs:
           app-id: ${{ secrets.APP_ID }}
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
           owner: ${{ github.repository_owner }}  # scopes token to whole org
-          repositories: "Test_models"
+          repositories: "models"
           
       - name: Debug token scope
         env:
@@ -119,5 +147,3 @@ jobs:
             exit 1
           fi
             
-
-  

@@ -20,7 +20,7 @@ jobs:
           ref: ${{ github.head_ref }} # checks out the branch that triggered the action (PR source)
           
       - name: Set up JDK 25
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4
         with:
           java-version: '25'
           distribution: 'adopt'
@@ -30,7 +30,7 @@ jobs:
           path: ../ili2c
       - name: verify java Version
         run: java --version
-      - name:
+      - name: Validate the Interlis Models
         run: |
           for file in models/*; do
             java -jar ../ili2c/ili2c.jar "$file"
