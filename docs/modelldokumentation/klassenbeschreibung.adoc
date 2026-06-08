@@ -2,7 +2,7 @@
 === Topic `+Stammdaten+`
 Das Topic `+Stammdaten+` umfasst alle statischen Werte. Darunter fallen z.B. die Aufzählwerte von Listen (INTERLIS-Datentyp «Aufzählung»). Jede Liste wird in einer eigenen Klasse modelliert.
 
-Die Stammdaten werden durch die zuständige Stelle vorgegeben. Bei Bundesthemen ist dies das für die Modellierung zuständige Bundesamt. Bei kantonalen Themen das zuständige kantonale Amt. Die Stammdaten von Bundesthemen können auf der Stufe Kanton erweitert werden. Die kantonalen Erweiterungen werden bei der Überführung ins Bundesmodell den entsprechenden Bundestypen zugeordnet. Bei Bedarf werden die Stammdaten durch die Abteilung Geoinformation nachgeführt und im https://github.com/ch-sz-geo/A000_template/tree/main/data[data-Verzeichnis] des jeweiligen Themas veröffentlicht.
+Die Stammdaten werden durch die zuständige Stelle vorgegeben. Bei Bundesthemen ist dies das für die Modellierung zuständige Bundesamt. Bei kantonalen Themen das zuständige kantonale Amt. Die Stammdaten von Bundesthemen können auf der Stufe Kanton erweitert werden. Die kantonalen Erweiterungen werden bei der Überführung ins Bundesmodell den entsprechenden Bundestypen zugeordnet. Bei Bedarf werden die Stammdaten durch die Abteilung Geoinformation nachgeführt und im https://github.com/ch-sz-geo/A180/tree/main/data[data-Verzeichnis] des jeweiligen Themas veröffentlicht.
 
 ==== Klasse `+Katalogeintrag+`
 Die Klasse `+Katalogeintrag+` enthält die allgemeinen, für alle Kataloge gemeinsamen Attribute. Die Klasse selber ist abstrakt: Es gibt keine Objekte `+Katalogeintrag+`, sondern nur Objekte von den spezialisierten Klassen.
