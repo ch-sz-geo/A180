@@ -624,12 +624,8 @@ m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
 | öffentlich
-m| Stand
-| Datum, an dem die letzte Mutation vorgenommen wurde
-| 2026-02-17
-| öffentlich
 m| Referenzdaten
-| Bezug auf die als Grundlage genutzten Referenzdaten des Gewässernetztes. Der Wert entspricht dem "Publikationsdatum" des Datensatzes "Referenzdaten_Fliessgewässer" (siehe https://data.geo.sz.ch/public/Themen/A041b/)
+| Der Raumbezug erfolgt anhand des Referenzdatensatzes Fliessgewässer einer bestimmten Version. Diese Version wird hier eingetragen. Der Wert entspricht dem "Publikationsdatum" des Datensatzes "Referenzdaten_Fliessgewässer" (siehe https://data.geo.sz.ch/public/Themen/A041b/).
 | 2022-09-14
 | öffentlich
 m| Bemerkung
