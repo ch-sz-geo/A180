@@ -258,7 +258,6 @@ MODEL SZ_Revitalisierungsplanung_Fliessgewaesser_V2 (de)
       erfasstAm      :  MANDATORY  XMLDateTime;
       geaendertVon   :  MANDATORY  TEXT*100;
       geaendertAm    :  MANDATORY  XMLDateTime;
-      Stand          :  MANDATORY  XMLDate;
       Referenzdaten  :  MANDATORY  XMLDate;
       Bemerkung      :             MTEXT*1000;
     END Bearbeitung;
