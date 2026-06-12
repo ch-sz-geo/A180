@@ -16,6 +16,6 @@ Bei der Bewirtschaftung eines Themas gibt es Attribute, deren Werte nicht frei e
 | SZ_Revitalisierungsplanung_Fliessgewaesser_V2 +
 (2026-04-15)
 | 2000-01-01
-| Diese Datei enthält die erste Version der Stammdaten. Darin sind die GUIDs durch den Kanton vergeben, da jene im Bundesdatensatz nicht eingeutig waren.
+| Diese Datei enthält die erste Version der Stammdaten. Darin sind die GUIDs durch den Kanton vergeben, da jene im Bundesdatensatz nicht eindeutig sind.
 | https://raw.githubusercontent.com/ch-sz-geo/A180/Bearbeitung/data/Stammdaten.xtf[*Datei*]
 |===
