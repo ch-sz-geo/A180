@@ -1,15 +1,21 @@
 = Dateibeschreibung
 
-Die Datei `+Stammdaten.xtf+` enthält die Stammdaten. Alle Änderungen an dieser Datei werden dort vorgenommen und über GitHub mit einer eindeutigen Identifikationsnummer (Commit-Hash-ID) versehen. Mithilfe dieser ID können frühere Versionen der Datei jederzeit abgerufen werden.
+Bei der Bewirtschaftung eines Themas gibt es Attribute, deren Werte nicht frei erfasst, sondern aus einem vorgegebenen Katalog selektiert werden müssen (z.B. Gemeindenamen aus dem Katalog der Schwyzer Gemeinden). Die Gesamtheit der Kataloge eines Themas wird als Stammdaten bezeichnet. Sie werden in einer eigenen Datei gehalten (`+Stammdaten.xtf+`) und bilden eine Voraussetzung für die Datenerfassung.
 
-Die folgende Tabelle fasst die relevanten Versionen der Stammdaten zusammen:
+Änderungen am Datenmodell und/oder Änderungen an den Stammdaten führen zu Anpassungen in der Datei `+Stammdaten.xtf+`. Die nachfolgende Tabelle zeigt, welche Stammdaten bei welchem Datenmodell zu verwenden sind.
 
-[cols="25%, 50%, 25%",options="header"]
+[cols="30%, 20%, 40%, 10%",options="header"]
 |===
-| Dateiname | Beschreibung | Modell +
-(Version)
-| https://raw.githubusercontent.com/ch-sz-geo/A180/Bearbeitung/data/Stammdaten.xtf[*Stammdaten.xtf*]
-| Diese Datei enthält die aktuell gültigen Stammdaten für die Datenerfassung.
+| Modell +
+(Version) | gültig ab | Beschreibung | Link
 | SZ_Revitalisierungsplanung_Fliessgewaesser_V2 +
 (2026-04-15)
+| 2026-06-12
+| Diese Datei enthält die Stammdaten mit den korrigierten GUIDs des Bundes.
+| https://raw.githubusercontent.com/ch-sz-geo/A180/f4562cd38f5358c7d0b91257e99b45edafbca974/data/Stammdaten.xtf[*Datei*]
+| SZ_Revitalisierungsplanung_Fliessgewaesser_V2 +
+(2026-04-15)
+| 2000-01-01
+| Diese Datei enthält die erste Version der Stammdaten. Darin sind die GUIDs durch den Kanton vergeben, da jene im Bundesdatensatz nicht eingeutig waren.
+| https://raw.githubusercontent.com/ch-sz-geo/A180/Bearbeitung/data/Stammdaten.xtf[*Datei*]
 |===
