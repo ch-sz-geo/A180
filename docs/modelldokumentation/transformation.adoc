@@ -83,31 +83,31 @@ Die Daten zu dieser Klasse werden im Thema A026 geführt. Die Transformationsreg
 [cols=2*,options="header"]
 |===
 | Quellattribut | Zielattribut
-|  Liniengeometrie, gebildet über die lineare Referenzierung auf der Grundlage von `+Achsgeometrie+` sowie `+LinearpositionVon+` und `+LinearpositionBis+` | `+Abschnitt+`
+|  Liniengeometrie, gebildet über die lineare Referenzierung auf der Grundlage von `+Abschnittsbewertung.Achsgeometrie+` sowie `+Abschnittsbewertung.LinearpositionVon+` und `+Abschnittsbewertung.LinearpositionBis+` | `+Abschnitt+`
 | Wert von `+Bewertung.OID+` +
 hergeleitet über `+Bewertung__Abschnittsbewertung.rBewertung+` | `+OEB+`
-| `+Bemerkung+` | `+Bemerkung+`
+| `+Abschnittsbewertung.Bemerkung+` | `+Bemerkung+`
 |===
 
 ==== Klasse `+AbschNutzen+`
 [cols=2*,options="header"]
 |===
 | Quellattribut | Zielattribut
-|  Liniengeometrie, gebildet über die lineare Referenzierung auf der Grundlage von `+Achsgeometrie+` sowie `+LinearpositionVon+` und `+LinearpositionBis+` | `+Abschnitt+`
+|  Liniengeometrie, gebildet über die lineare Referenzierung auf der Grundlage von `+Abschnittsnutzen.Achsgeometrie+` sowie `+Abschnittsnutzen.LinearpositionVon+` und `+Abschnittsnutzen.LinearpositionBis+` | `+Abschnitt+`
 | Wert von `+Nutzen.OID+` +
 hergeleitet über `+Nutzen__Abschnittsnutzen.rNutzen+` | `+Nutzen+`
-| `+Bemerkung+` | `+Bemerkung+`
+| `+Abschnittsnutzen.Bemerkung+` | `+Bemerkung+`
 |===
 
 ==== Klasse `+AbschPrio+`
 [cols=2*,options="header"]
 |===
 | Quellattribut | Zielattribut
-|  Liniengeometrie, gebildet über die lineare Referenzierung auf der Grundlage von `+Achsgeometrie+` sowie `+LinearpositionVon+` und `+LinearpositionBis+` | `+Abschnitt+`
-| `+Frist+` | `+Frist+`
+|  Liniengeometrie, gebildet über die lineare Referenzierung auf der Grundlage von `+Abschnittsprioritaet.Achsgeometrie+` sowie `+Abschnittsprioritaet.LinearpositionVon+` und `+Abschnittsprioritaet.LinearpositionBis+` | `+Abschnitt+`
+| `+Abschnittsprioritaet.Frist+` | `+Frist+`
 | Wert von `+Massnahme.OID+` +
 hergeleitet über `+Massnahme__Abschnittsprioritaet.rMassnahme+` | `+Massnahmen+`
-| `+Bemerkung+` | `+Bemerkung+`
+| `+Abschnittsprioritaet.Bemerkung+` | `+Bemerkung+`
 |===
 
 ==== Klasse `+BauwerkNutzen+`
