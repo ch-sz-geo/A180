@@ -322,7 +322,7 @@ m| Identifikator_Analysesystem
 | 12345
 | +++<span style="color:red;">intern</span>+++
 m| Identifikator_Bauwerk
-| Identifikator (OID) des Bauwerks im Modell "SZ_Oekomorphologie_Fliessgewaesser_V1_1". +
+| Identifikator (OID) des Bauwerks im Modell "SZ_Oekomorphologie_Fliessgewaesser_V2". +
 Im Sinne unabhängiger Datenmodelle wird die lose Koppelung der Daten bevorzugt und auf die Modellierung eines Fremdschlüsselattributes verzichtet.
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
 | öffentlich
@@ -399,7 +399,7 @@ m| rNutzen
 4+| - - -
 4+| *Bedingungen*
 m| Identifikator_Bauwerk
-3+| Der Wert muss mit einer OID der Klasse `+SZ_Oekomorphologie_Fliessgewaesser_V1_1.Oekomorphologie.Bauwerk+` übereinstimmen.
+3+| Der Wert muss mit einer OID der Klasse `+SZ_Oekomorphologie_Fliessgewaesser_V2.Oekomorphologie.Bauwerk+` übereinstimmen.
 |===
 
 ==== Klasse `+Bauwerksgruppe+`
@@ -475,7 +475,7 @@ m| Identifikator_Analysesystem
 | 12345
 | +++<span style="color:red;">intern</span>+++
 m| Identifikator_Absturz
-| Identifikator (OID) des Absturzes im Modell "SZ_Oekomorphologie_Fliessgewaesser_V1_1". +
+| Identifikator (OID) des Absturzes im Modell "SZ_Oekomorphologie_Fliessgewaesser_V2". +
 Im Sinne unabhängiger Datenmodelle wird die lose Koppelung der Daten bevorzugt und auf die Modellierung eines Fremdschlüsselattributes verzichtet.
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
 | öffentlich
@@ -552,7 +552,7 @@ m| rNutzen
 4+| - - -
 4+| *Bedingungen*
 m| Identifikator_Absturz
-3+| Der Wert muss mit einer OID der Klasse `+SZ_Oekomorphologie_Fliessgewaesser_V1_1.Oekomorphologie.Absturz+` übereinstimmen.
+3+| Der Wert muss mit einer OID der Klasse `+SZ_Oekomorphologie_Fliessgewaesser_V2.Oekomorphologie.Absturz+` übereinstimmen.
 |===
 
 ==== Klasse `+Absturzgruppe+`
@@ -599,7 +599,7 @@ Das Topic `+Metadaten+` umfasst eine Klasse, welche Informationen zu den Fachdat
 ==== Klasse `+Bearbeitung+`
 Die Klasse `+Bearbeitung+` enthält Metadaten über den Fachdatensatz. Eine wichtige Information ist die Angabe des Referenzdatensatzes, auf welchem die Daten erhoben wurden. Die Fachdaten können nur über diesen Referenzdatensatz räumlich korrekt dargestellt werden.
 
-Auf der Klasse `+Bearbeitung+` darf nur ein einziger Eintrag stehen. Dies deshalb, weil die Revitalisierungsplanung sich auf genau einen Fliessgewässerreferenzstand bezieht und nur genau ein letztes Nachführungsdatum (`+Stand+`) aufweisen kann. Dieser eine Eintrag wird über das Singleton-Pattern erzwungen (siehe die Definition der Beziehung der Klasse `+Bearbeitung+`).
+Auf der Klasse `+Bearbeitung+` darf nur ein einziger Eintrag stehen. Dies deshalb, weil die Revitalisierungsplanung sich auf genau einen Fliessgewässerreferenzstand bezieht. Dieser eine Eintrag wird über das Singleton-Pattern erzwungen (siehe die Definition der Beziehung der Klasse `+Bearbeitung+`).
 
 [cols=4*,options="header"]
 |===
