@@ -52,8 +52,7 @@ Die Klasse `+Absturzbewertung+` führt die Attribute zur Bewertung eines Absturz
 | `+BemFeldRel+` | `+Bemerkung_Feldrelevanz+`
 | `+BemNutzen+` | `+Bemerkung_Nutzen+`
 | `+NutzenGIS+` | `+rGISNutzen+`
-| `+Nutzen+` | `+rGISNutzen+` +
-Die Werte von `+NutzenGIS+` und `+Nutzen+` sind identisch. Aus diesem Grund wird auf den gleichen Katalog verwiesen.
+| `+Nutzen+` | `+rNutzen+`
 | `+Begruend+` | `+Begruendung+`
 | `+BemPlau+` | `+Bemerkung_Plausibilisierung+`
 | `+Massnahme+` | `+Massnahme+`
