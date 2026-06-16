@@ -1,5 +1,5 @@
 == Modelltransformationen
-=== Transformation vo der Struktur der Datenerfassung ins kantonale Datenmodell
+=== Transformation von der Struktur der Datenerfassung ins kantonale Datenmodell
 * Quellmodell: Als Input für das "Quellmodell" dient eine Excel-Liste, in welcher der Auftragnehmer Attributerweiterungen vorschlägt.
 * Zielmodell: Das hier beschriebene Datenmodell
 
@@ -13,7 +13,6 @@ Die Klasse `+Bauwerksbewertung+` führt die Attribute zur Bewertung eines Bauwer
 | `+bauwerk_kennung+` | `+Identifikator_Bauwerk+`
 | `+SOHLENGEF+` | `+Sohlengefaelle+`
 | `+HVI_PRO_HINDERNISGRUPPE+` | `+Habitatsvergroesserungsindex+`
-| `+IDs_HINDERNISGRUPPE+` | über `+rGruppe+` der Klasse `+Bauwerk+`
 | `+FELDARBEIT+` | `+hatFeldbegehung+`
 | `+AUFWAND_KL+` | `+rBauaufwand+`
 | `+POTENZIAL_KL+` | `+rPotenzial+`
@@ -41,10 +40,9 @@ Die Klasse `+Absturzbewertung+` führt die Attribute zur Bewertung eines Absturz
 | Quellattribut | Zielattribut
 | `+OBJECTID+` | `+Identifikator_Quellsystem+`
 | `+ID+` | `+Identifikator_Analysesystem+`
-| `+bauwerk_kennung+` | `+Identifikator_Absturz+`
+| `+absturz_kennung+` | `+Identifikator_Absturz+`
 | `+SOHLENGEF+` | `+Sohlengefaelle+`
 | `+HVI_PRO_HINDERNISGRUPPE+` | `+Habitatsvergroesserungsindex+`
-| `+IDs_HINDERNISGRUPPE+` | über `+rGruppe+` der Klasse `+Absturz+`
 | `+FELDARBEIT+` | `+hatFeldbegehung+`
 | `+AUFWAND_KL+` | `+rBauaufwand+`
 | `+POTENZIAL_KL+` | `+rPotenzial+`
@@ -71,13 +69,13 @@ Die Klasse `+Absturzgruppe+` dient der Zusammenfassung von Abstürzen zu einer H
 * Zielmodell: https://models.geo.admin.ch/BAFU/Revitalisierung_Fliessgewaesser_V1_2.ili[Revitalisierung_Fliessgewaesser_V1_2 (Version: 2024-06-13)]
 
 ==== Klasse `+AbschOekomorph+`
-Die Daten zu dieser Klasse werden im Thema A026 geführt. Die Transformationsregel finden sich https://ch-sz-geo.github.io/A026/docs/modelldokumentation.html#_transformation_ins_minimale_geodatenmodell_des_bundes[hier].
+Die Daten zu dieser Klasse werden im Thema A026 geführt. Die Transformationsregeln finden sich https://ch-sz-geo.github.io/A026/docs/modelldokumentation.html#_transformation_ins_minimale_geodatenmodell_des_bundes[hier].
 
 ==== Klasse `+Absturz+`
-Die Daten zu dieser Klasse werden im Thema A026 geführt. Die Transformationsregel finden sich https://ch-sz-geo.github.io/A026/docs/modelldokumentation.html#_transformation_ins_minimale_geodatenmodell_des_bundes[hier].
+Die Daten zu dieser Klasse werden im Thema A026 geführt. Die Transformationsregeln finden sich https://ch-sz-geo.github.io/A026/docs/modelldokumentation.html#_transformation_ins_minimale_geodatenmodell_des_bundes[hier].
 
 ==== Klasse `+Bauwerk+`
-Die Daten zu dieser Klasse werden im Thema A026 geführt. Die Transformationsregel finden sich https://ch-sz-geo.github.io/A026/docs/modelldokumentation.html#_transformation_ins_minimale_geodatenmodell_des_bundes[hier].
+Die Daten zu dieser Klasse werden im Thema A026 geführt. Die Transformationsregeln finden sich https://ch-sz-geo.github.io/A026/docs/modelldokumentation.html#_transformation_ins_minimale_geodatenmodell_des_bundes[hier].
 
 ==== Klasse `+AbschOEB+`
 [cols=2*,options="header"]
