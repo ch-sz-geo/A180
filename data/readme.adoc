@@ -12,7 +12,7 @@ Bei der Bewirtschaftung eines Themas gibt es Attribute, deren Werte nicht frei e
 (2026-04-15)
 | 2026-06-12
 | Diese Datei enthält die Stammdaten mit den korrigierten GUIDs des Bundes.
-| https://raw.githubusercontent.com/ch-sz-geo/A180/f4562cd38f5358c7d0b91257e99b45edafbca974/data/Stammdaten.xtf[*Datei*]
+| https://raw.githubusercontent.com/ch-sz-geo/A180/main/data/Stammdaten.xtf[*Datei*]
 | SZ_Revitalisierungsplanung_Fliessgewaesser_V2 +
 (2026-04-15)
 | 2000-01-01
